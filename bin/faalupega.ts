@@ -2,7 +2,6 @@
 import { Command } from "commander";
 import { villageCommand } from "../src/commands/village.js";
 import { mataiCommand } from "../src/commands/matai.js";
-import { listCommand } from "../src/commands/list.js";
 
 const program = new Command();
 
@@ -15,8 +14,7 @@ program
 Faalupega is the traditional record of matai (chief) titles for each
 village in Samoa. It documents the sacred hierarchy of titles, their
 connections, ceremonial meeting grounds (malae-fono), houses of chiefs
-(maota o alii), kava cup names (igoa-ipu a alii), and village
-messengers (savali).
+(maota o alii), and kava cup names (igoa-ipu a alii).
 
 This tool provides a searchable reference for these records.
 All searches are partial and case-insensitive. Samoan diacritics
@@ -28,12 +26,10 @@ Usage examples:
   $ faalupega village pui             Partial match
   $ faalupega matai Seiuli            Search by matai title
   $ faalupega matai Fanene            Finds compound titles too
-  $ faalupega list                    List all villages
   $ faalupega village Puipaa --json   JSON output for agents`
   );
 
 program.addCommand(villageCommand);
 program.addCommand(mataiCommand);
-program.addCommand(listCommand);
 
 program.parse();

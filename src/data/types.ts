@@ -39,9 +39,6 @@ export interface Village {
   /** Maota o Alii — houses of chiefs */
   maotaOAlii: TitleEntry[];
 
-  /** Igoa-Ipu a Alii — kava cup names of chiefs */
+  /** Igoa-Ipu a Alii — kava cup names of chiefs (includes Sāvali as final entry) */
   igoaIpu: TitleEntry[];
-
-  /** Sāvali — village messengers/heralds */
-  savali: string[];
 }

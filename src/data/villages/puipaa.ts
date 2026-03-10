@@ -44,7 +44,6 @@ export const puipaa: Village = {
     { title: "Fanene", details: ["E tapa fua"] },
     { title: "Manu\u02BBa", details: ["Alo talitali le ipu a e taute le Manu\u02BBales\u0101"] },
     { title: "Latafale", details: ["Tamaalii faaea Faleupolu"] },
+    { title: "S\u0101vali", details: ["Ulugia ma Fale\u02BBafa"] },
   ],
-
-  savali: ["Ulugia", "Fale\u02BBafa"],
 };

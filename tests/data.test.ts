@@ -51,10 +51,6 @@ describe("data integrity", () => {
           expect(entry.details.length).toBeGreaterThan(0);
         });
       });
-
-      it("has at least one savali", () => {
-        expect(village.savali.length).toBeGreaterThan(0);
-      });
     });
   }
 });

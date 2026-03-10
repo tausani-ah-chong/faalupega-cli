@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { findVillagesByName } from "../search.js";
-import { formatVillage, formatVillageList } from "../format.js";
+import { formatVillage } from "../format.js";
 
 export const villageCommand = new Command("village")
   .description(

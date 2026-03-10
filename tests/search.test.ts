@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { normalize, findVillagesByName, findVillagesByMatai } from "../src/search.js";
+import { normalize, findVillagesByName, findMataiMatches } from "../src/search.js";
 
 describe("normalize", () => {
   it("lowercases input", () => {
@@ -63,40 +63,67 @@ describe("findVillagesByName", () => {
   });
 });
 
-describe("findVillagesByMatai", () => {
-  it("finds village by exact matai title", () => {
-    const results = findVillagesByMatai("Seiuli");
+describe("findMataiMatches", () => {
+  it("finds village by matai title", () => {
+    const results = findMataiMatches("Seiuli");
     expect(results).toHaveLength(1);
-    expect(results[0].name).toBe("Puipaʻa");
+    expect(results[0].village.name).toBe("Puipaʻa");
+    expect(results[0].matches.length).toBeGreaterThan(0);
   });
 
-  it("finds village by partial matai title", () => {
-    const results = findVillagesByMatai("sei");
+  it("returns matches grouped by section", () => {
+    const results = findMataiMatches("Seiuli");
+    const sections = results[0].matches.map((m) => m.section);
+    expect(sections).toContain("MAOTA O ALII");
+    expect(sections).toContain("O IGOA-IPU A ALII");
+    expect(sections).toContain("SAʻOTAMAʻITAʻI");
+  });
+
+  it("orders matches in standard section order", () => {
+    const results = findMataiMatches("Seiuli");
+    const sections = results[0].matches.map((m) => m.section);
+    const order = ["TULOU", "MALAE-FONO", "MAOTA O ALII", "O IGOA-IPU A ALII", "SAʻOTAMAʻITAʻI"];
+    const indices = sections.map((s) => order.indexOf(s));
+    for (let i = 1; i < indices.length; i++) {
+      expect(indices[i]).toBeGreaterThan(indices[i - 1]);
+    }
+  });
+
+  it("finds compound title member (Fanene from 'Pepe, Fanene')", () => {
+    const results = findMataiMatches("Fanene");
     expect(results).toHaveLength(1);
   });
 
-  it("finds village by compound title member (Fanene from 'Pepe, Fanene')", () => {
-    const results = findVillagesByMatai("Fanene");
+  it("searches tulou text", () => {
+    const results = findMataiMatches("Seiulialii");
     expect(results).toHaveLength(1);
+    const tulou = results[0].matches.find((m) => m.section === "TULOU");
+    expect(tulou).toBeDefined();
   });
 
-  it("finds village by matai with macron", () => {
-    const results = findVillagesByMatai("Faumuina");
+  it("searches detail text", () => {
+    const results = findMataiMatches("Ulugia");
     expect(results).toHaveLength(1);
+    const ipu = results[0].matches.find((m) => m.section === "O IGOA-IPU A ALII");
+    expect(ipu).toBeDefined();
+    expect(ipu!.entries.some((e) => e.title === "Sāvali")).toBe(true);
   });
 
-  it("finds village by matai with glottal stop stripped", () => {
-    const results = findVillagesByMatai("Mataia");
+  it("partial match across multiple sections", () => {
+    const results = findMataiMatches("ulu");
     expect(results).toHaveLength(1);
+    const sections = results[0].matches.map((m) => m.section);
+    expect(sections).toContain("TULOU");
+    expect(sections).toContain("SAʻOTAMAʻITAʻI");
   });
 
   it("is case insensitive", () => {
-    const results = findVillagesByMatai("seiuli");
+    const results = findMataiMatches("seiuli");
     expect(results).toHaveLength(1);
   });
 
   it("returns empty array for no match", () => {
-    const results = findVillagesByMatai("nonexistent");
+    const results = findMataiMatches("nonexistent");
     expect(results).toHaveLength(0);
   });
 });
