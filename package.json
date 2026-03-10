@@ -1,0 +1,25 @@
+{
+  "name": "faalupega",
+  "version": "0.1.0",
+  "description": "Samoan Faalupega Lookup Tool — a searchable reference for traditional matai title records",
+  "type": "module",
+  "bin": {
+    "faalupega": "./dist/bin/faalupega.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/faalupega.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["samoa", "faalupega", "matai", "cli"],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
