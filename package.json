@@ -6,14 +6,27 @@
   "bin": {
     "faalupega": "./dist/bin/faalupega.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/bin/faalupega.js",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": ["samoa", "faalupega", "matai", "cli"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tausani-ah-chong/faalupega-cli.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "commander": "^13.0.0"
   },
