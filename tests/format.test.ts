@@ -19,40 +19,47 @@ describe("formatVillage", () => {
   });
 
   it("includes MALAE-FONO section", () => {
-    expect(output).toContain("MALAE-FONO:");
-    expect(output).toContain("Lepea \u2014 Fono o le manino (filemu)");
+    expect(output).toContain("MALAE-FONO");
+    expect(output).toContain("Lepea");
+    expect(output).toContain("Fono o le manino (filemu)");
   });
 
   it("includes MAOTA O ALII section", () => {
-    expect(output).toContain("MAOTA O ALII:");
+    expect(output).toContain("MAOTA O ALII");
   });
 
   it("includes IGOA-IPU section with numbered multi-detail entries", () => {
-    expect(output).toContain("O IGOA-IPU A ALII:");
+    expect(output).toContain("O IGOA-IPU A ALII");
     expect(output).toContain("1. Fai ʻava le ita");
     expect(output).toContain("2. Talitigā");
     expect(output).toContain("3. Numia ma Tumua");
   });
 
   it("includes Sāvali as igoaIpu entry", () => {
-    expect(output).toContain("Sāvali \u2014 Ulugia ma Faleʻafa");
+    expect(output).toContain("Sāvali");
+    expect(output).toContain("Ulugia ma Faleʻafa");
   });
 
   it("includes SAʻOTAMAʻITAʻI section", () => {
-    expect(output).toContain("SAʻOTAMAʻITAʻI:");
-    expect(output).toContain("Faumuinā \u2014 Letelesā");
+    expect(output).toContain("SAʻOTAMAʻITAʻI");
+    expect(output).toContain("Faumuinā");
+    expect(output).toContain("Letelesā");
   });
 
   it("follows standard section order: Tulou → Malae-Fono → Maota → Igoa-Ipu → Saotamaitai", () => {
     const tulouPos = output.indexOf("Tulouna lau tofa");
-    const malaePos = output.indexOf("MALAE-FONO:");
-    const maotaPos = output.indexOf("MAOTA O ALII:");
-    const ipuPos = output.indexOf("O IGOA-IPU A ALII:");
-    const saotaPos = output.indexOf("SAʻOTAMAʻITAʻI:");
+    const malaePos = output.indexOf("MALAE-FONO");
+    const maotaPos = output.indexOf("MAOTA O ALII");
+    const ipuPos = output.indexOf("O IGOA-IPU A ALII");
+    const saotaPos = output.indexOf("SAʻOTAMAʻITAʻI");
     expect(tulouPos).toBeLessThan(malaePos);
     expect(malaePos).toBeLessThan(maotaPos);
     expect(maotaPos).toBeLessThan(ipuPos);
     expect(ipuPos).toBeLessThan(saotaPos);
+  });
+
+  it("renders table borders", () => {
+    expect(output).toMatch(/[─│┌┐└┘├┤┬┴┼]/);
   });
 });
 
@@ -60,7 +67,7 @@ describe("formatMataiResult", () => {
   it("shows village name header", () => {
     const results = findMataiMatches("Seiuli");
     const output = formatMataiResult(results[0]);
-    expect(output).toContain("Puipaʻa \u2014 Faleata, Upolu");
+    expect(output).toContain("Puipaʻa — Faleata, Upolu");
   });
 
   it("shows only matching entries, not full record", () => {
@@ -75,21 +82,28 @@ describe("formatMataiResult", () => {
   it("shows matching tulou when applicable", () => {
     const results = findMataiMatches("ulu");
     const output = formatMataiResult(results[0]);
-    expect(output).toContain("TULOU:");
+    expect(output).toContain("TULOU");
     expect(output).toContain("Tulouna lau tofa");
   });
 
-  it("formats single-detail entries with em-dash", () => {
+  it("formats single-detail entries in table columns", () => {
     const results = findMataiMatches("Seiuli");
     const output = formatMataiResult(results[0]);
-    expect(output).toContain("Seiuli \u2014 Vaiusu");
+    expect(output).toContain("Seiuli");
+    expect(output).toContain("Vaiusu");
   });
 
   it("follows standard section order in matches", () => {
     const results = findMataiMatches("ulu");
     const output = formatMataiResult(results[0]);
-    const tulouPos = output.indexOf("TULOU:");
-    const saotaPos = output.indexOf("SAʻOTAMAʻITAʻI:");
+    const tulouPos = output.indexOf("TULOU");
+    const saotaPos = output.indexOf("SAʻOTAMAʻITAʻI");
     expect(tulouPos).toBeLessThan(saotaPos);
+  });
+
+  it("renders table borders", () => {
+    const results = findMataiMatches("Seiuli");
+    const output = formatMataiResult(results[0]);
+    expect(output).toMatch(/[─│┌┐└┘├┤┬┴┼]/);
   });
 });
