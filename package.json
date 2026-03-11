@@ -18,7 +18,12 @@
     "test:watch": "vitest",
     "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["samoa", "faalupega", "matai", "cli"],
+  "keywords": [
+    "samoa",
+    "faalupega",
+    "matai",
+    "cli"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,6 +33,7 @@
     "node": ">=18"
   },
   "dependencies": {
+    "@inquirer/select": "^5.1.0",
     "commander": "^13.0.0"
   },
   "devDependencies": {

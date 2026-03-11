@@ -2,6 +2,12 @@
 import { Command } from "commander";
 import { villageCommand } from "../src/commands/village.js";
 import { mataiCommand } from "../src/commands/matai.js";
+import { setVersionCommand } from "../src/commands/set-version.js";
+import { loadConfig } from "../src/config.js";
+import { DEFAULT_VERSION } from "../src/data/types.js";
+
+const config = loadConfig();
+const defaultVersion = config.version ?? DEFAULT_VERSION;
 
 const program = new Command();
 
@@ -9,6 +15,7 @@ program
   .name("faalupega")
   .version("0.1.0")
   .helpOption("-h, --help", "Display help for command")
+  .option("--data-version <version>", "Faalupega version year to query (e.g. 1930)", defaultVersion)
   .description(
     `Samoan Faalupega Lookup Tool
 
@@ -33,5 +40,6 @@ Usage examples:
 
 program.addCommand(villageCommand);
 program.addCommand(mataiCommand);
+program.addCommand(setVersionCommand);
 
 program.parse();

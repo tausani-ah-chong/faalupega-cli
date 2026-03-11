@@ -61,6 +61,17 @@ describe("findVillagesByName", () => {
     const results = findVillagesByName("nonexistent");
     expect(results).toHaveLength(0);
   });
+
+  it("filters by version when provided", () => {
+    const results = findVillagesByName("Puipaa", "1930");
+    expect(results).toHaveLength(1);
+    expect(results[0].version).toBe("1930");
+  });
+
+  it("returns empty for non-existent version", () => {
+    const results = findVillagesByName("Puipaa", "9999");
+    expect(results).toHaveLength(0);
+  });
 });
 
 describe("findMataiMatches", () => {
@@ -124,6 +135,17 @@ describe("findMataiMatches", () => {
 
   it("returns empty array for no match", () => {
     const results = findMataiMatches("nonexistent");
+    expect(results).toHaveLength(0);
+  });
+
+  it("filters by version when provided", () => {
+    const results = findMataiMatches("Seiuli", "1930");
+    expect(results).toHaveLength(1);
+    expect(results[0].village.version).toBe("1930");
+  });
+
+  it("returns empty for non-existent version", () => {
+    const results = findMataiMatches("Seiuli", "9999");
     expect(results).toHaveLength(0);
   });
 });

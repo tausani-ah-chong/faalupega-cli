@@ -17,7 +17,12 @@ export interface TitleEntry {
  * - Macrons: ā, ē, ī, ō, ū
  * - Glottal stops: ʻ (U+02BB)
  */
+export const DEFAULT_VERSION = "1930";
+
 export interface Village {
+  /** Version identifier, e.g. "1930" */
+  version: string;
+
   /** Village name with correct diacritics, e.g. "Puipa'a" */
   name: string;
 

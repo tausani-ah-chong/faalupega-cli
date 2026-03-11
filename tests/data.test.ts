@@ -8,6 +8,10 @@ describe("data integrity", () => {
 
   for (const village of villages) {
     describe(`village: ${village.name}`, () => {
+      it("has a version", () => {
+        expect(village.version.trim().length).toBeGreaterThan(0);
+      });
+
       it("has a non-empty name", () => {
         expect(village.name.trim().length).toBeGreaterThan(0);
       });

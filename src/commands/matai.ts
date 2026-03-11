@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { findMataiMatches } from "../search.js";
-import { formatMataiResult } from "../format.js";
+import { formatMataiResult, formatVersionBox } from "../format.js";
 
 export const mataiCommand = new Command("matai")
   .alias("suafa")
@@ -13,19 +13,22 @@ export const mataiCommand = new Command("matai")
   )
   .argument("<name>", "Matai/suafa title to search for")
   .option("--json", "Output as JSON for programmatic use")
-  .action((name: string, opts: { json?: boolean }) => {
-    const results = findMataiMatches(name);
+  .action((name: string, opts: { json?: boolean }, command: Command) => {
+    const globalOpts = command.parent?.opts() as { dataVersion?: string };
+    const version = globalOpts?.dataVersion;
+    const results = findMataiMatches(name, version);
     if (results.length === 0) {
       console.error(`No villages found for matai title: ${name}`);
       process.exit(1);
     }
     if (opts.json) {
       const jsonResults = results.map((r) => ({
-        village: { name: r.village.name, district: r.village.district, island: r.village.island },
+        village: { name: r.village.name, district: r.village.district, island: r.village.island, version: r.village.version },
         matches: r.matches,
       }));
       console.log(JSON.stringify(jsonResults, null, 2));
     } else {
+      console.log(formatVersionBox(version ?? "1930"));
       console.log(results.map((r) => formatMataiResult(r)).join("\n\n"));
     }
   });

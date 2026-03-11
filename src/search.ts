@@ -1,4 +1,4 @@
-import { villages } from "./data/index.js";
+import { getVillages } from "./data/index.js";
 import type { Village, TitleEntry } from "./data/types.js";
 
 /**
@@ -18,9 +18,9 @@ export function normalize(input: string): string {
 /**
  * Find villages by name. Partial, case-insensitive match after normalization.
  */
-export function findVillagesByName(query: string): Village[] {
+export function findVillagesByName(query: string, version?: string): Village[] {
   const q = normalize(query);
-  return villages.filter((v) => normalize(v.name).includes(q));
+  return getVillages(version).filter((v) => normalize(v.name).includes(q));
 }
 
 export interface SectionMatch {
@@ -63,11 +63,11 @@ function filterTitleEntries(entries: TitleEntry[], q: string): TitleEntry[] {
  * Returns focused results: only matching entries, grouped by section,
  * in standard section order.
  */
-export function findMataiMatches(query: string): MataiSearchResult[] {
+export function findMataiMatches(query: string, version?: string): MataiSearchResult[] {
   const q = normalize(query);
   const results: MataiSearchResult[] = [];
 
-  for (const village of villages) {
+  for (const village of getVillages(version)) {
     const matches: SectionMatch[] = [];
 
     for (const { key, label } of SECTION_CONFIG) {

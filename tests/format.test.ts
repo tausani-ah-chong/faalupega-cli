@@ -1,10 +1,25 @@
 import { describe, it, expect } from "vitest";
-import { formatVillage, formatMataiResult } from "../src/format.js";
+import { formatVillage, formatMataiResult, formatVersionBox } from "../src/format.js";
 import { findMataiMatches } from "../src/search.js";
-import { puipaa } from "../src/data/villages/puipaa.js";
+import { puipaa } from "../src/data/villages/1930/puipaa.js";
+
+describe("formatVersionBox", () => {
+  it("renders a bracketed box with the version", () => {
+    const box = formatVersionBox("1930");
+    const lines = box.split("\n");
+    expect(lines[0]).toContain("┌");
+    expect(lines[1]).toContain("Version 1930");
+    expect(lines[2]).toContain("└");
+  });
+});
 
 describe("formatVillage", () => {
   const output = formatVillage(puipaa);
+
+  it("starts with the banner bar, not version box", () => {
+    const firstLine = output.split("\n")[0];
+    expect(firstLine).toContain("═");
+  });
 
   it("includes village name in header", () => {
     expect(output).toContain("PUIPAʻA");
