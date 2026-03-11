@@ -1,0 +1,99 @@
+import { villages } from "./data/index.js";
+import type { Village, TitleEntry } from "./data/types.js";
+
+/**
+ * Normalize a Samoan string for comparison:
+ * 1. Lowercase
+ * 2. NFD decompose then strip combining diacritics (macrons)
+ * 3. Remove glottal stop characters: ʻ (U+02BB), ' (U+2018), ' (U+2019), plain apostrophe
+ */
+export function normalize(input: string): string {
+  return input
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u02BB\u2018\u2019']/g, "");
+}
+
+/**
+ * Find villages by name. Partial, case-insensitive match after normalization.
+ */
+export function findVillagesByName(query: string): Village[] {
+  const q = normalize(query);
+  return villages.filter((v) => normalize(v.name).includes(q));
+}
+
+export interface SectionMatch {
+  section: string;
+  entries: TitleEntry[];
+}
+
+export interface MataiSearchResult {
+  village: Village;
+  matches: SectionMatch[];
+}
+
+/**
+ * Standard section order used everywhere:
+ * Tulou → Malae-Fono → Maota o Alii → O Igoa-Ipu a Alii → Sa'otama'ita'i
+ */
+const SECTION_CONFIG: { key: keyof Village; label: string }[] = [
+  { key: "tulou", label: "TULOU" },
+  { key: "malaeFono", label: "MALAE-FONO" },
+  { key: "maotaOAlii", label: "MAOTA O ALII" },
+  { key: "igoaIpu", label: "O IGOA-IPU A ALII" },
+  { key: "saotamaitai", label: "SA\u02BBOTAMA\u02BBITA\u02BBI" },
+];
+
+function matchesQuery(text: string, q: string): boolean {
+  return normalize(text).includes(q);
+}
+
+function filterTitleEntries(entries: TitleEntry[], q: string): TitleEntry[] {
+  return entries.filter((e) => {
+    const titleNames = e.title.split(/,\s*/);
+    const titleMatch = titleNames.some((name) => matchesQuery(name, q));
+    const detailMatch = e.details.some((d) => matchesQuery(d, q));
+    return titleMatch || detailMatch;
+  });
+}
+
+/**
+ * Search for a matai/suafa title across all village sections.
+ * Returns focused results: only matching entries, grouped by section,
+ * in standard section order.
+ */
+export function findMataiMatches(query: string): MataiSearchResult[] {
+  const q = normalize(query);
+  const results: MataiSearchResult[] = [];
+
+  for (const village of villages) {
+    const matches: SectionMatch[] = [];
+
+    for (const { key, label } of SECTION_CONFIG) {
+      const data = village[key];
+
+      if (key === "tulou") {
+        const tulouData = data as string[];
+        const matchingTulou = tulouData.filter((t) => matchesQuery(t, q));
+        if (matchingTulou.length > 0) {
+          matches.push({
+            section: label,
+            entries: matchingTulou.map((t) => ({ title: t, details: [] })),
+          });
+        }
+      } else {
+        const filtered = filterTitleEntries(data as TitleEntry[], q);
+        if (filtered.length > 0) {
+          matches.push({ section: label, entries: filtered });
+        }
+      }
+    }
+
+    if (matches.length > 0) {
+      results.push({ village, matches });
+    }
+  }
+
+  return results;
+}
