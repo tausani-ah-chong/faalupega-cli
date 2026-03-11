@@ -36,7 +36,7 @@ export function formatVillage(village: Village): string {
   // Tulou
   if (village.tulou.length > 0) {
     for (const t of village.tulou) {
-      parts.push(`  "${t}"`);
+      parts.push(t);
     }
     parts.push("");
   }
@@ -73,8 +73,14 @@ export function formatVillage(village: Village): string {
  * Section order: Tulou → Malae-Fono → Maota o Alii → O Igoa-Ipu a Alii → Sa'otama'ita'i
  */
 export function formatMataiResult(result: MataiSearchResult): string {
+  const header = `${result.village.name.toUpperCase()} \u2014 ${result.village.district}, ${result.village.island}`;
+  const bar = "\u2550".repeat(header.length + 4);
+
   const parts: string[] = [
-    `${result.village.name} \u2014 ${result.village.district}, ${result.village.island}`,
+    bar,
+    `  ${header}`,
+    bar,
+    "",
   ];
 
   for (const match of result.matches) {
