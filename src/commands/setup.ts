@@ -5,14 +5,17 @@ import {
   saveConfig,
   getAvailableVersions,
 } from "../config.js";
+import { printBanner } from "../format.js";
 
-export const setVersionCommand = new Command("set-version")
+export const setupCommand = new Command("setup")
   .description(
-    "Set the default faalupega version.\n" +
-    "Opens an interactive picker to choose from available versions.\n" +
+    "Interactive setup for faalupega.\n" +
+    "Displays a welcome banner and lets you choose the default version.\n" +
     "Your choice is saved to ~/.faalupega/config.json."
   )
   .action(async () => {
+    printBanner();
+
     const config = loadConfig();
     const versions = getAvailableVersions();
 
