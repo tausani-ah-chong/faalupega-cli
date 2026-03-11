@@ -3,12 +3,13 @@ import { findMataiMatches } from "../search.js";
 import { formatMataiResult } from "../format.js";
 
 export const mataiCommand = new Command("matai")
+  .alias("suafa")
   .description(
-    "Search for a matai (chief) title and find which villages it belongs to.\n" +
+    "Search for a matai (chief) title and find which villages it belongs to. (Samoan: suafa)\n" +
     "Searches across all sections: Tulou, Malae-Fono, Maota o Alii,\n" +
     "O Igoa-Ipu a Alii, and Sa\u02BBotama\u02BBita\u02BBi.\n" +
     "Partial and case-insensitive. Diacritics optional.\n" +
-    "Examples: faalupega matai Seiuli, faalupega matai Fanene, faalupega matai ulu"
+    "Examples: faalupega matai Seiuli, faalupega suafa Fanene, faalupega matai ulu"
   )
   .argument("<name>", "Matai/suafa title to search for")
   .option("--json", "Output as JSON for programmatic use")

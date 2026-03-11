@@ -3,10 +3,11 @@ import { findVillagesByName } from "../search.js";
 import { formatVillage } from "../format.js";
 
 export const villageCommand = new Command("village")
+  .aliases(["nuu", "nu'u"])
   .description(
-    "Look up a village's faalupega by name.\n" +
+    "Look up a village's faalupega by name. (Samoan: nuu / nu'u)\n" +
     "Searches are partial and case-insensitive. Diacritics (macrons, glottal stops) are optional.\n" +
-    'Examples: faalupega village Puipaa, faalupega village "Puipaʻa", faalupega village pui'
+    'Examples: faalupega village Puipaa, faalupega nuu Puipaa, faalupega village pui'
   )
   .argument("<name>", "Village name to search for (diacritics optional)")
   .option("--json", "Output as JSON for programmatic use")

@@ -8,6 +8,7 @@ const program = new Command();
 program
   .name("faalupega")
   .version("0.1.0")
+  .helpOption("-h, --help", "Display help for command")
   .description(
     `Samoan Faalupega Lookup Tool
 
@@ -23,9 +24,10 @@ but preserved in output.
 
 Usage examples:
   $ faalupega village Puipaa          Search by village name
+  $ faalupega nuu Puipaa             Same search using Samoan alias
   $ faalupega village pui             Partial match
   $ faalupega matai Seiuli            Search by matai title
-  $ faalupega matai Fanene            Finds compound titles too
+  $ faalupega suafa Fanene            Same search using Samoan alias
   $ faalupega village Puipaa --json   JSON output for agents`
   );
 

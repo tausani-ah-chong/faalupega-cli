@@ -60,7 +60,7 @@ describe("formatMataiResult", () => {
   it("shows village name header", () => {
     const results = findMataiMatches("Seiuli");
     const output = formatMataiResult(results[0]);
-    expect(output).toContain("Puipaʻa \u2014 Faleata, Upolu");
+    expect(output).toContain("PUIPAʻA \u2014 Faleata, Upolu");
   });
 
   it("shows only matching entries, not full record", () => {
