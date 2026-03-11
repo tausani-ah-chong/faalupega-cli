@@ -8,6 +8,7 @@ const program = new Command();
 program
   .name("faalupega")
   .version("0.1.0")
+  .helpOption("-h, --help", "Display help for command")
   .description(
     `Samoan Faalupega Lookup Tool
 
