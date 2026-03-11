@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { findVillagesByName } from "../search.js";
-import { formatVillage } from "../format.js";
+import { formatVillage, formatVersionBox } from "../format.js";
 
 export const villageCommand = new Command("village")
   .aliases(["nuu", "nu'u"])
@@ -22,6 +22,7 @@ export const villageCommand = new Command("village")
     if (opts.json) {
       console.log(JSON.stringify(results.length === 1 ? results[0] : results, null, 2));
     } else {
+      console.log(formatVersionBox(version ?? "1930"));
       if (results.length === 1) {
         console.log(formatVillage(results[0]));
       } else {

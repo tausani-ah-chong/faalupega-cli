@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { findMataiMatches } from "../search.js";
-import { formatMataiResult } from "../format.js";
+import { formatMataiResult, formatVersionBox } from "../format.js";
 
 export const mataiCommand = new Command("matai")
   .alias("suafa")
@@ -28,6 +28,7 @@ export const mataiCommand = new Command("matai")
       }));
       console.log(JSON.stringify(jsonResults, null, 2));
     } else {
+      console.log(formatVersionBox(version ?? "1930"));
       console.log(results.map((r) => formatMataiResult(r)).join("\n\n"));
     }
   });

@@ -19,6 +19,18 @@ function formatSection(heading: string, entries: TitleEntry[]): string {
 }
 
 /**
+ * Format a standalone version box to print once at the top of output.
+ */
+export function formatVersionBox(version: string): string {
+  const label = ` Version ${version} `;
+  return [
+    `\u250C${"\u2500".repeat(label.length)}\u2510`,
+    `\u2502${label}\u2502`,
+    `\u2514${"\u2500".repeat(label.length)}\u2518`,
+  ].join("\n");
+}
+
+/**
  * Format a full village faalupega record.
  * Section order: Tulou → Malae-Fono → Maota o Alii → O Igoa-Ipu a Alii → Sa'otama'ita'i
  */
@@ -26,15 +38,7 @@ export function formatVillage(village: Village): string {
   const header = `${village.name.toUpperCase()} \u2014 ${village.district}, ${village.island}`;
   const bar = "\u2550".repeat(header.length + 4);
 
-  const versionLabel = ` Version ${village.version} `;
-  const versionBox = [
-    `\u250C${ "\u2500".repeat(versionLabel.length)}\u2510`,
-    `\u2502${versionLabel}\u2502`,
-    `\u2514${"\u2500".repeat(versionLabel.length)}\u2518`,
-  ];
-
   const parts: string[] = [
-    ...versionBox,
     bar,
     `  ${header}`,
     bar,
@@ -84,15 +88,7 @@ export function formatMataiResult(result: MataiSearchResult): string {
   const header = `${result.village.name.toUpperCase()} \u2014 ${result.village.district}, ${result.village.island}`;
   const bar = "\u2550".repeat(header.length + 4);
 
-  const versionLabel = ` Version ${result.village.version} `;
-  const versionBox = [
-    `\u250C${"\u2500".repeat(versionLabel.length)}\u2510`,
-    `\u2502${versionLabel}\u2502`,
-    `\u2514${"\u2500".repeat(versionLabel.length)}\u2518`,
-  ];
-
   const parts: string[] = [
-    ...versionBox,
     bar,
     `  ${header}`,
     bar,
