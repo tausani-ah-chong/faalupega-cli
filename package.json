@@ -12,9 +12,15 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "keywords": ["samoa", "faalupega", "matai", "cli"],
+  "keywords": [
+    "samoa",
+    "faalupega",
+    "matai",
+    "cli"
+  ],
   "license": "MIT",
   "dependencies": {
+    "cli-table3": "^0.6.5",
     "commander": "^13.0.0"
   },
   "devDependencies": {

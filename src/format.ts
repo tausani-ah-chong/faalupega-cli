@@ -1,35 +1,33 @@
+import Table from "cli-table3";
 import type { Village, TitleEntry } from "./data/types.js";
 import type { MataiSearchResult } from "./search.js";
 
-function formatSection(heading: string, entries: TitleEntry[]): string {
-  const lines: string[] = [`${heading}:`];
+function formatDetails(entry: TitleEntry): string {
+  if (entry.details.length === 0) return "";
+  if (entry.details.length === 1) return entry.details[0];
+  return entry.details.map((d, i) => `${i + 1}. ${d}`).join("\n");
+}
+
+function sectionTable(heading: string, entries: TitleEntry[]): string {
+  const table = new Table({
+    head: [heading, ""],
+    style: { head: [], border: [] },
+  });
+
   for (const entry of entries) {
-    if (entry.details.length === 0) {
-      lines.push(`  ${entry.title}`);
-    } else if (entry.details.length === 1) {
-      lines.push(`  ${entry.title} \u2014 ${entry.details[0]}`);
-    } else {
-      lines.push(`  ${entry.title}:`);
-      entry.details.forEach((d, i) => {
-        lines.push(`    ${i + 1}. ${d}`);
-      });
-    }
+    table.push([entry.title, formatDetails(entry)]);
   }
-  return lines.join("\n");
+
+  return table.toString();
 }
 
 /**
- * Format a full village faalupega record.
+ * Format a full village faalupega record as tables.
  * Section order: Tulou → Malae-Fono → Maota o Alii → O Igoa-Ipu a Alii → Sa'otama'ita'i
  */
 export function formatVillage(village: Village): string {
-  const header = `${village.name.toUpperCase()} \u2014 ${village.district}, ${village.island}`;
-  const bar = "\u2550".repeat(header.length + 4);
-
   const parts: string[] = [
-    bar,
-    `  ${header}`,
-    bar,
+    `${village.name.toUpperCase()} — ${village.district}, ${village.island}`,
     "",
   ];
 
@@ -43,66 +41,51 @@ export function formatVillage(village: Village): string {
 
   // Malae-Fono
   if (village.malaeFono.length > 0) {
-    parts.push(formatSection("MALAE-FONO", village.malaeFono));
+    parts.push(sectionTable("MALAE-FONO", village.malaeFono));
     parts.push("");
   }
 
   // Maota o Alii
   if (village.maotaOAlii.length > 0) {
-    parts.push(formatSection("MAOTA O ALII", village.maotaOAlii));
+    parts.push(sectionTable("MAOTA O ALII", village.maotaOAlii));
     parts.push("");
   }
 
   // O Igoa-Ipu a Alii
   if (village.igoaIpu.length > 0) {
-    parts.push(formatSection("O IGOA-IPU A ALII", village.igoaIpu));
+    parts.push(sectionTable("O IGOA-IPU A ALII", village.igoaIpu));
     parts.push("");
   }
 
   // Sa'otama'ita'i
   if (village.saotamaitai.length > 0) {
-    parts.push(formatSection("SA\u02BBOTAMA\u02BBITA\u02BBI", village.saotamaitai));
+    parts.push(sectionTable("SAʻOTAMAʻITAʻI", village.saotamaitai));
   }
 
   return parts.join("\n");
 }
 
 /**
- * Format focused matai search results.
+ * Format focused matai search results as tables.
  * Shows village name, then only matching entries grouped by section.
- * Section order: Tulou → Malae-Fono → Maota o Alii → O Igoa-Ipu a Alii → Sa'otama'ita'i
  */
 export function formatMataiResult(result: MataiSearchResult): string {
-  const header = `${result.village.name.toUpperCase()} \u2014 ${result.village.district}, ${result.village.island}`;
-  const bar = "\u2550".repeat(header.length + 4);
-
   const parts: string[] = [
-    bar,
-    `  ${header}`,
-    bar,
-    "",
+    `${result.village.name} — ${result.village.district}, ${result.village.island}`,
   ];
 
   for (const match of result.matches) {
     if (match.section === "TULOU") {
-      parts.push(`  ${match.section}:`);
+      const table = new Table({
+        head: ["TULOU"],
+        style: { head: [], border: [] },
+      });
       for (const entry of match.entries) {
-        parts.push(`    ${entry.title}`);
+        table.push([entry.title]);
       }
+      parts.push(table.toString());
     } else {
-      parts.push(`  ${match.section}:`);
-      for (const entry of match.entries) {
-        if (entry.details.length === 0) {
-          parts.push(`    ${entry.title}`);
-        } else if (entry.details.length === 1) {
-          parts.push(`    ${entry.title} \u2014 ${entry.details[0]}`);
-        } else {
-          parts.push(`    ${entry.title}:`);
-          entry.details.forEach((d, i) => {
-            parts.push(`      ${i + 1}. ${d}`);
-          });
-        }
-      }
+      parts.push(sectionTable(match.section, match.entries));
     }
   }
 
