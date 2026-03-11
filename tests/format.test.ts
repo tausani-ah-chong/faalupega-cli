@@ -6,9 +6,11 @@ import { puipaa } from "../src/data/villages/1930/puipaa.js";
 describe("formatVillage", () => {
   const output = formatVillage(puipaa);
 
-  it("shows version as first line", () => {
-    const firstLine = output.split("\n")[0];
-    expect(firstLine).toBe("Version: 1930");
+  it("shows version in a bracketed box at the top", () => {
+    const lines = output.split("\n");
+    expect(lines[0]).toContain("┌");
+    expect(lines[1]).toContain("Version 1930");
+    expect(lines[2]).toContain("└");
   });
 
   it("includes village name in header", () => {

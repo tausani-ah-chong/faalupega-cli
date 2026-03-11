@@ -26,8 +26,15 @@ export function formatVillage(village: Village): string {
   const header = `${village.name.toUpperCase()} \u2014 ${village.district}, ${village.island}`;
   const bar = "\u2550".repeat(header.length + 4);
 
+  const versionLabel = ` Version ${village.version} `;
+  const versionBox = [
+    `\u250C${ "\u2500".repeat(versionLabel.length)}\u2510`,
+    `\u2502${versionLabel}\u2502`,
+    `\u2514${"\u2500".repeat(versionLabel.length)}\u2518`,
+  ];
+
   const parts: string[] = [
-    `Version: ${village.version}`,
+    ...versionBox,
     bar,
     `  ${header}`,
     bar,
@@ -77,8 +84,15 @@ export function formatMataiResult(result: MataiSearchResult): string {
   const header = `${result.village.name.toUpperCase()} \u2014 ${result.village.district}, ${result.village.island}`;
   const bar = "\u2550".repeat(header.length + 4);
 
+  const versionLabel = ` Version ${result.village.version} `;
+  const versionBox = [
+    `\u250C${"\u2500".repeat(versionLabel.length)}\u2510`,
+    `\u2502${versionLabel}\u2502`,
+    `\u2514${"\u2500".repeat(versionLabel.length)}\u2518`,
+  ];
+
   const parts: string[] = [
-    `Version: ${result.village.version}`,
+    ...versionBox,
     bar,
     `  ${header}`,
     bar,
