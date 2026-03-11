@@ -9,6 +9,7 @@ program
   .name("faalupega")
   .version("0.1.0")
   .helpOption("-h, --help", "Display help for command")
+  .option("--data-version <version>", "Faalupega version year to query (e.g. 1930)", "1930")
   .description(
     `Samoan Faalupega Lookup Tool
 

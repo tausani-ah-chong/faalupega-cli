@@ -11,8 +11,10 @@ export const villageCommand = new Command("village")
   )
   .argument("<name>", "Village name to search for (diacritics optional)")
   .option("--json", "Output as JSON for programmatic use")
-  .action((name: string, opts: { json?: boolean }) => {
-    const results = findVillagesByName(name);
+  .action((name: string, opts: { json?: boolean }, command: Command) => {
+    const globalOpts = command.parent?.opts() as { dataVersion?: string };
+    const version = globalOpts?.dataVersion;
+    const results = findVillagesByName(name, version);
     if (results.length === 0) {
       console.error(`No faalupega found for village: ${name}`);
       process.exit(1);

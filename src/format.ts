@@ -27,6 +27,7 @@ export function formatVillage(village: Village): string {
   const bar = "\u2550".repeat(header.length + 4);
 
   const parts: string[] = [
+    `Version: ${village.version}`,
     bar,
     `  ${header}`,
     bar,
@@ -77,6 +78,7 @@ export function formatMataiResult(result: MataiSearchResult): string {
   const bar = "\u2550".repeat(header.length + 4);
 
   const parts: string[] = [
+    `Version: ${result.village.version}`,
     bar,
     `  ${header}`,
     bar,

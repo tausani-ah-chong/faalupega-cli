@@ -1,2 +1,4 @@
-export { puipaa } from "./puipaa.js";
-export { toamua } from "./toamua.js";
+import { puipaa, toamua } from "./1930/index.js";
+import type { Village } from "../types.js";
+
+export const allVillages: Village[] = [puipaa, toamua];

@@ -1,10 +1,15 @@
 import { describe, it, expect } from "vitest";
 import { formatVillage, formatMataiResult } from "../src/format.js";
 import { findMataiMatches } from "../src/search.js";
-import { puipaa } from "../src/data/villages/puipaa.js";
+import { puipaa } from "../src/data/villages/1930/puipaa.js";
 
 describe("formatVillage", () => {
   const output = formatVillage(puipaa);
+
+  it("shows version as first line", () => {
+    const firstLine = output.split("\n")[0];
+    expect(firstLine).toBe("Version: 1930");
+  });
 
   it("includes village name in header", () => {
     expect(output).toContain("PUIPAʻA");
