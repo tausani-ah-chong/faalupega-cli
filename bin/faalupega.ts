@@ -23,9 +23,10 @@ but preserved in output.
 
 Usage examples:
   $ faalupega village Puipaa          Search by village name
+  $ faalupega nuu Puipaa             Same search using Samoan alias
   $ faalupega village pui             Partial match
   $ faalupega matai Seiuli            Search by matai title
-  $ faalupega matai Fanene            Finds compound titles too
+  $ faalupega suafa Fanene            Same search using Samoan alias
   $ faalupega village Puipaa --json   JSON output for agents`
   );
 
