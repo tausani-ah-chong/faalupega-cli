@@ -101,6 +101,12 @@ export function formatVillage(village: Village): string {
     parts.push("");
   }
 
+  // Maota ma Malae
+  if (village.maotaMaMalae && village.maotaMaMalae.length > 0) {
+    parts.push(formatSection("MAOTA MA MALAE", village.maotaMaMalae));
+    parts.push("");
+  }
+
   // O Igoa-Ipu a Alii
   if (village.igoaIpu.length > 0) {
     parts.push(formatSection("O IGOA-IPU A ALII", village.igoaIpu));
@@ -109,7 +115,17 @@ export function formatVillage(village: Village): string {
 
   // Sa'otama'ita'i
   if (village.saotamaitai.length > 0) {
-    parts.push(formatSection("SA\u02BBOTAMA\u02BBITA\u02BBI", village.saotamaitai));
+    parts.push(formatSection("SAʻOTAMAʻITAʻI", village.saotamaitai));
+    parts.push("");
+  }
+
+  // Aualuma o Tane
+  if (village.aualumaOTane && village.aualumaOTane.length > 0) {
+    const lines: string[] = ["AUALUMA O TANE:"];
+    for (const name of village.aualumaOTane) {
+      lines.push(`  ${name}`);
+    }
+    parts.push(lines.join("\n"));
   }
 
   return parts.join("\n");

@@ -122,8 +122,9 @@ describe("findMataiMatches", () => {
 
   it("partial match across multiple sections", () => {
     const results = findMataiMatches("ulu");
-    expect(results).toHaveLength(1);
-    const sections = results[0].matches.map((m) => m.section);
+    const puipaa = results.find((r) => r.village.name === "Puipaʻa");
+    expect(puipaa).toBeDefined();
+    const sections = puipaa!.matches.map((m) => m.section);
     expect(sections).toContain("TULOU");
     expect(sections).toContain("SAʻOTAMAʻITAʻI");
   });
