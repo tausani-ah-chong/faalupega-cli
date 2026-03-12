@@ -4,7 +4,8 @@
   "description": "Samoan Faalupega Lookup Tool — a searchable reference for traditional matai title records",
   "type": "module",
   "bin": {
-    "faalupega": "./dist/bin/faalupega.js"
+    "faalupega": "./dist/bin/faalupega.js",
+    "faalupega-mcp": "./dist/src/mcp-server.js"
   },
   "files": [
     "dist",
@@ -16,6 +17,7 @@
     "start": "node dist/bin/faalupega.js",
     "test": "vitest run",
     "test:watch": "vitest",
+    "mcp": "node dist/src/mcp-server.js",
     "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
@@ -34,6 +36,7 @@
   },
   "dependencies": {
     "@inquirer/select": "^5.1.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
     "commander": "^13.0.0"
   },
   "devDependencies": {
