@@ -13,7 +13,7 @@ export const tafua: Village = {
     "Tulouna lau fetalaiga a Lemaota ma lau tōfā a Leʻulu",
     "Tulouna lau susuga a Nonu ma Salafaioti",
     "Tulouna lau Afioga a Mataʻutia",
-    "Tulounasa Taeloa",
+    "Tulouna sa Taeloa",
     "Tulouna lau Afioga a Tofa ma lau Susuga a Saʻu",
     "Alaala mai ʻIli ma Saea ma lau fetalaiga a Fituʻafau",
     "Tulouna a oe Salafaitele",
