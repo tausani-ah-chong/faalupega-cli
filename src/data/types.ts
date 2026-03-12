@@ -46,4 +46,7 @@ export interface Village {
 
   /** Igoa-Ipu a Alii — kava cup names of chiefs (includes Sāvali as final entry) */
   igoaIpu: TitleEntry[];
+
+  /** Aualuma o Tane — names of the men's assembly (not all villages have this) */
+  aualumaOTane?: string[];
 }

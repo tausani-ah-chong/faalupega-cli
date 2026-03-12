@@ -42,7 +42,8 @@ const SECTION_CONFIG: { key: keyof Village; label: string }[] = [
   { key: "malaeFono", label: "MALAE-FONO" },
   { key: "maotaOAlii", label: "MAOTA O ALII" },
   { key: "igoaIpu", label: "O IGOA-IPU A ALII" },
-  { key: "saotamaitai", label: "SA\u02BBOTAMA\u02BBITA\u02BBI" },
+  { key: "saotamaitai", label: "SAʻOTAMAʻITAʻI" },
+  { key: "aualumaOTane", label: "AUALUMA O TANE" },
 ];
 
 function matchesQuery(text: string, q: string): boolean {
@@ -73,13 +74,13 @@ export function findMataiMatches(query: string, version?: string): MataiSearchRe
     for (const { key, label } of SECTION_CONFIG) {
       const data = village[key];
 
-      if (key === "tulou") {
-        const tulouData = data as string[];
-        const matchingTulou = tulouData.filter((t) => matchesQuery(t, q));
-        if (matchingTulou.length > 0) {
+      if (key === "tulou" || key === "aualumaOTane") {
+        const stringData = (data as string[] | undefined) ?? [];
+        const matching = stringData.filter((t) => matchesQuery(t, q));
+        if (matching.length > 0) {
           matches.push({
             section: label,
-            entries: matchingTulou.map((t) => ({ title: t, details: [] })),
+            entries: matching.map((t) => ({ title: t, details: [] })),
           });
         }
       } else {
