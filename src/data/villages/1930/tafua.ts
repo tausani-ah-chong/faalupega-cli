@@ -31,7 +31,9 @@ export const tafua: Village = {
 
   malaeFono: [],
 
-  maotaOAlii: [
+  maotaOAlii: [],
+
+  maotaMaMalae: [
     { title: "Safatatu", details: ["Onē"] },
     { title: "Sataeloa", details: ["Vesi"] },
     { title: "Salafaitele", details: ["Malaesaili"] },

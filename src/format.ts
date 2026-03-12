@@ -101,6 +101,12 @@ export function formatVillage(village: Village): string {
     parts.push("");
   }
 
+  // Maota ma Malae
+  if (village.maotaMaMalae && village.maotaMaMalae.length > 0) {
+    parts.push(formatSection("MAOTA MA MALAE", village.maotaMaMalae));
+    parts.push("");
+  }
+
   // O Igoa-Ipu a Alii
   if (village.igoaIpu.length > 0) {
     parts.push(formatSection("O IGOA-IPU A ALII", village.igoaIpu));

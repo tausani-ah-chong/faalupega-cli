@@ -41,6 +41,7 @@ const SECTION_CONFIG: { key: keyof Village; label: string }[] = [
   { key: "tulou", label: "TULOU" },
   { key: "malaeFono", label: "MALAE-FONO" },
   { key: "maotaOAlii", label: "MAOTA O ALII" },
+  { key: "maotaMaMalae", label: "MAOTA MA MALAE" },
   { key: "igoaIpu", label: "O IGOA-IPU A ALII" },
   { key: "saotamaitai", label: "SAʻOTAMAʻITAʻI" },
   { key: "aualumaOTane", label: "AUALUMA O TANE" },
@@ -84,7 +85,8 @@ export function findMataiMatches(query: string, version?: string): MataiSearchRe
           });
         }
       } else {
-        const filtered = filterTitleEntries(data as TitleEntry[], q);
+        const entries = (data as TitleEntry[] | undefined) ?? [];
+        const filtered = filterTitleEntries(entries, q);
         if (filtered.length > 0) {
           matches.push({ section: label, entries: filtered });
         }
