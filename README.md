@@ -1,3 +1,5 @@
+<img width="1992" height="1132" alt="Screenshot 2026-03-12 at 9 25 20 PM" src="https://github.com/user-attachments/assets/c3e09c45-65f3-4d9f-a56d-01c30114a20c" />
+
 # faalupega-cli
 
 Samoan Faalupega Lookup Tool — a searchable reference for traditional matai title records.
