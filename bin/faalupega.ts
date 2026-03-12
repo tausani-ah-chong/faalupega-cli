@@ -2,7 +2,7 @@
 import { Command } from "commander";
 import { villageCommand } from "../src/commands/village.js";
 import { mataiCommand } from "../src/commands/matai.js";
-import { setVersionCommand } from "../src/commands/set-version.js";
+import { setupCommand } from "../src/commands/setup.js";
 import { loadConfig } from "../src/config.js";
 import { DEFAULT_VERSION } from "../src/data/types.js";
 
@@ -40,6 +40,6 @@ Usage examples:
 
 program.addCommand(villageCommand);
 program.addCommand(mataiCommand);
-program.addCommand(setVersionCommand);
+program.addCommand(setupCommand);
 
 program.parse();
