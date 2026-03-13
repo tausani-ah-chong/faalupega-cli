@@ -47,9 +47,15 @@ export interface Village {
   /** Maota ma Malae — houses and meeting grounds (not all villages have this) */
   maotaMaMalae?: TitleEntry[];
 
+  /** Maota — houses of chiefs without the 'o Alii' qualifier (not all villages have this) */
+  maota?: TitleEntry[];
+
   /** Igoa-Ipu a Alii — kava cup names of chiefs (includes Sāvali as final entry) */
   igoaIpu: TitleEntry[];
 
   /** Aualuma o Tane — names of the men's assembly (not all villages have this) */
   aualumaOTane?: string[];
+
+  /** Ipu a Tamaʻitaʻi — kava cups of female chiefs (not all villages have this) */
+  ipuATamaitai?: TitleEntry[];
 }
