@@ -6,3 +6,8 @@ export { salelavalu } from "./salelavalu.js";
 export { iva } from "./iva.js";
 export { vaiafai } from "./vaiafai.js";
 export { vaisaulu } from "./vaisaulu.js";
+export { lalomalava } from "./lalomalava.js";
+export { safua } from "./safua.js";
+export { sapapalii } from "./sapapalii.js";
+export { safotulafai } from "./safotulafai.js";
+export { tapueleele } from "./tapueleele.js";

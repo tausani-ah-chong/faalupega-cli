@@ -58,4 +58,7 @@ export interface Village {
 
   /** Ipu a Tamaʻitaʻi — kava cups of female chiefs (not all villages have this) */
   ipuATamaitai?: TitleEntry[];
+
+  /** Sāvali — the village messenger/traveling representative (not all villages have this) */
+  savali?: string;
 }
