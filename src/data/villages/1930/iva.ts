@@ -50,7 +50,7 @@ export const iva: Village = {
     { title: "Lelevaga Pousea", details: ["Fetaiaʻi ma uso"] },
     { title: "Mumū", details: ["Moso matutu"] },
     { title: "Tia", details: ["Suaʻava mata"] },
-    { title: "isi alii", details: ["E tapa fua"] },
+    { title: "E tapa fua isi alii", details: [""] },
   ],
 
   saotamaitai: [
