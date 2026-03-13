@@ -107,6 +107,12 @@ export function formatVillage(village: Village): string {
     parts.push("");
   }
 
+  // Maota (without 'o Alii')
+  if (village.maota && village.maota.length > 0) {
+    parts.push(formatSection("MAOTA", village.maota));
+    parts.push("");
+  }
+
   // O Igoa-Ipu a Alii
   if (village.igoaIpu.length > 0) {
     parts.push(formatSection("O IGOA-IPU A ALII", village.igoaIpu));
@@ -126,6 +132,13 @@ export function formatVillage(village: Village): string {
       lines.push(`  ${name}`);
     }
     parts.push(lines.join("\n"));
+    parts.push("");
+  }
+
+  // O Ipu a Tamaʻitaʻi
+  if (village.ipuATamaitai && village.ipuATamaitai.length > 0) {
+    parts.push(formatSection("O IPU A TAMAʻITAʻI", village.ipuATamaitai));
+    parts.push("");
   }
 
   return parts.join("\n");
