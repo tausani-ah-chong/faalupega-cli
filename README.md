@@ -19,8 +19,9 @@ cd faalupega-cli
 npm install
 npm run build
 
-# Or install globally from npm
-npm install -g faalupega
+node dist/bin/faalupega.js setup
+
+node dist/bin/faalupega.js --help
 ```
 
 Requires Node.js 18 or later.
