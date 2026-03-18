@@ -50,7 +50,7 @@ export const amoaSisifo: Village = {
     { title: "Vui", details: ["Nofonaina"] },
     { title: "Lemalu", details: ["Taitovaipae"] },
     { title: "Matafeo", details: ["Tiufea ma Alo"] },
-    { title: "Pesetā", details: ["Manaʻilegalu"] },
+    { title: "Pesetā", details: ["Mauaʻilegalu"] },
   ],
 
   ipuATamaitai: [
