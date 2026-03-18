@@ -35,7 +35,7 @@ export const amoaSisifo: Village = {
   igoaIpu: [
     { title: "Sā Vui", details: ["Taua vave ola"] },
     { title: "Matafeo", details: ["Talitiga"] },
-    { title: "Pesetā", details: ["Tuisauta aumai Olomaga. A e a i ai Sala ua le inu ai Pesetā"] },
+    { title: "Pesetā", details: ["Tuisauta aumai Olomaga. A e a i ai Salā ua le inu ai Pesetā"] },
     { title: "Vaiouga", details: ["Logomaua"] },
     { title: "Lemalu", details: ["Tagoseu i le tai"] },
     { title: "Iʻiga", details: ["Tinomalū"] },
