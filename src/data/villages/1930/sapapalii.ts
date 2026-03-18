@@ -65,5 +65,6 @@ export const sapapalii: Village = {
     { title: "Faiʻainoa", details: ["E tapa fua"] },
     { title: "Tuamafa", details: ["Fono iʻa mata"] },
     { title: "Paālo", details: ["E tapa fua"] },
+    { title: "Tafailematagi", details: [] },
   ],
 };
