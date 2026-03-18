@@ -33,7 +33,7 @@ export const lealatele: Village = {
     { title: "Salā", details: ["Tuisauta aumai olomaga"] },
     { title: "Tuala", details: ["Numia ma Pule"] },
     { title: "ʻAualiitia", details: ["Faamoe i nuu tasi"] },
-    { title: "Saniʻa", details: ["Tala a le motu aumai fia tau na luʻia"] },
+    { title: "Sauiʻa", details: ["Tala a le motu aumai fia tau na luʻia"] },
     { title: "Natoealofa", details: ["Malie"] },
     { title: "Iʻiga", details: ["Tinomalū"] },
   ],
