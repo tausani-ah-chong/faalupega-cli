@@ -11,3 +11,8 @@ export { safua } from "./safua.js";
 export { sapapalii } from "./sapapalii.js";
 export { safotulafai } from "./safotulafai.js";
 export { tapueleele } from "./tapueleele.js";
+export { faga } from "./faga.js";
+export { amoaSasae } from "./amoasasae.js";
+export { amoaSisifo } from "./amoasisifo.js";
+export { lealatele } from "./lealatele.js";
+export { patamea } from "./patamea.js";
