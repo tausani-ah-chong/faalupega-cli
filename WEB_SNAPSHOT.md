@@ -185,7 +185,7 @@ async function boot() {
   //   ["faalupega", "matai", "Seiuli"]
   //   ["faalupega", "village", "Puipaa", "--json"]
   //   ["faalupega", "setup"]  (interactive — needs input wiring below)
-  const proc = await wc.spawn("npx", ["faalupega", "village", "Puipaa"]);
+  const proc = await wc.spawn("faalupega", ["village", "Puipaa"]);
 
   // Pipe CLI stdout to xterm.js.
   proc.output.pipeTo(new WritableStream({
@@ -209,7 +209,7 @@ boot();
 1. `WebContainer.boot()` can only be called once per page. If you need to run multiple commands, reuse the same WebContainer instance.
 2. `wc.mount(fsSnapshot)` is called once after boot. Do not call it again unless you need to update files.
 3. `npm install` must complete before you spawn the CLI. It installs `commander` and `@inquirer/select` inside the WebContainer, and links the `faalupega` bin.
-4. Use `wc.spawn("npx", ["faalupega", ...args])` to run commands. The `npx` wrapper resolves the bin link created by `npm install`.
+4. Use `wc.spawn("faalupega", [...args])` to run commands. The bin link created by `npm install` makes `faalupega` available as a command.
 5. For read-only commands (like `village` or `matai` search), you only need to pipe `proc.output` to the terminal.
 6. For interactive commands (like `setup`), you must also pipe terminal input to `proc.input`.
 
@@ -224,11 +224,11 @@ boot();
 
 | Command | Spawn call | Interactive? |
 |---------|-----------|-------------|
-| Search by village | `wc.spawn("npx", ["faalupega", "village", "<name>"])` | No |
-| Search by matai | `wc.spawn("npx", ["faalupega", "matai", "<name>"])` | No |
-| JSON output | `wc.spawn("npx", ["faalupega", "village", "<name>", "--json"])` | No |
-| Setup wizard | `wc.spawn("npx", ["faalupega", "setup"])` | Yes (needs input piping) |
-| Help | `wc.spawn("npx", ["faalupega", "--help"])` | No |
+| Search by village | `wc.spawn("faalupega", ["village", "<name>"])` | No |
+| Search by matai | `wc.spawn("faalupega", ["matai", "<name>"])` | No |
+| JSON output | `wc.spawn("faalupega", ["village", "<name>", "--json"])` | No |
+| Setup wizard | `wc.spawn("faalupega", ["setup"])` | Yes (needs input piping) |
+| Help | `wc.spawn("faalupega", ["--help"])` | No |
 
 All searches are partial and case-insensitive. Samoan diacritics (macrons and glottal stops) are optional in search input but preserved in output.
 
