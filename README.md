@@ -166,6 +166,69 @@ Returns the full village faalupega record (tulou, malae-fono, maota o alii, igoa
 ```
 Returns matching villages with only the relevant sections and entries that matched.
 
+## Browser / WebContainers
+
+You can run faalupega-cli entirely in the browser using [WebContainers](https://webcontainers.io/). The build script generates a filesystem snapshot that can be mounted directly into a WebContainer instance.
+
+### Prerequisites
+
+- Node.js 18+
+- A website project that uses the [WebContainers API](https://www.npmjs.com/package/@webcontainer/api) (requires [cross-origin isolation headers](https://webcontainers.io/guides/configuring-headers))
+- A terminal UI library like [xterm.js](https://www.npmjs.com/package/@xterm/xterm) for rendering the CLI output
+
+### Building the snapshot
+
+```bash
+npm run build:web-snapshot
+```
+
+This compiles TypeScript to `dist/`, then generates `web-snapshot/fs-snapshot.json` — a JSON file containing every file the CLI needs to run, formatted as a WebContainers [FileSystemTree](https://webcontainers.io/api#filesystemtree).
+
+The snapshot:
+- Includes all compiled JS files from `dist/` and a trimmed `package.json`
+- Excludes the MCP server and its `@modelcontextprotocol/sdk` dependency
+- Only requires `commander` and `@inquirer/select` as runtime dependencies
+
+### Using the snapshot in your website
+
+```js
+import { WebContainer } from "@webcontainer/api";
+import fsSnapshot from "./fs-snapshot.json";
+
+// 1. Boot a WebContainer
+const wc = await WebContainer.boot();
+
+// 2. Mount the filesystem snapshot
+await wc.mount(fsSnapshot);
+
+// 3. Install dependencies
+const install = await wc.spawn("npm", ["install"]);
+await install.exit;
+
+// 4. Run the CLI (e.g. search for a village)
+const proc = await wc.spawn("node", ["dist/bin/faalupega.js", "village", "Puipaa"]);
+
+// 5. Stream output to your terminal UI (e.g. xterm.js)
+proc.output.pipeTo(
+  new WritableStream({
+    write(chunk) {
+      terminal.write(chunk);
+    },
+  })
+);
+```
+
+For interactive commands like `faalupega setup`, you also need to pipe user input from xterm.js into `proc.input`.
+
+### What's in the snapshot
+
+| Key | Contents |
+|-----|----------|
+| `package.json` | Trimmed package manifest (name, version, bin, and browser-only dependencies) |
+| `dist/` | Compiled JavaScript — CLI entry point, commands, data modules, search, and formatting |
+
+The snapshot is roughly 55 KB of JSON and contains ~30 files.
+
 ## License
 
 MIT
