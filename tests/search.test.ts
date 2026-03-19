@@ -77,9 +77,10 @@ describe("findVillagesByName", () => {
 describe("findMataiMatches", () => {
   it("finds village by matai title", () => {
     const results = findMataiMatches("Seiuli");
-    expect(results).toHaveLength(1);
-    expect(results[0].village.name).toBe("Puipaʻa");
-    expect(results[0].matches.length).toBeGreaterThan(0);
+    expect(results).toHaveLength(2);
+    const puipaa = results.find((r) => r.village.name === "Puipaʻa");
+    expect(puipaa).toBeDefined();
+    expect(puipaa!.matches.length).toBeGreaterThan(0);
   });
 
   it("returns matches grouped by section", () => {
@@ -131,7 +132,7 @@ describe("findMataiMatches", () => {
 
   it("is case insensitive", () => {
     const results = findMataiMatches("seiuli");
-    expect(results).toHaveLength(1);
+    expect(results).toHaveLength(2);
   });
 
   it("returns empty array for no match", () => {
@@ -141,8 +142,8 @@ describe("findMataiMatches", () => {
 
   it("filters by version when provided", () => {
     const results = findMataiMatches("Seiuli", "1930");
-    expect(results).toHaveLength(1);
-    expect(results[0].village.version).toBe("1930");
+    expect(results).toHaveLength(2);
+    results.forEach((r) => expect(r.village.version).toBe("1930"));
   });
 
   it("returns empty for non-existent version", () => {
