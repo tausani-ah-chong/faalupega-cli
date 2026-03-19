@@ -166,6 +166,12 @@ Returns the full village faalupega record (tulou, malae-fono, maota o alii, igoa
 ```
 Returns matching villages with only the relevant sections and entries that matched.
 
+## Browser / WebContainers
+
+You can run faalupega-cli in the browser using WebContainers. Run `npm run build:web-snapshot` to generate `web-snapshot/fs-snapshot.json`, then mount it in a WebContainer instance on your website.
+
+See [WEB_SNAPSHOT.md](./WEB_SNAPSHOT.md) for full step-by-step integration instructions.
+
 ## License
 
 MIT
