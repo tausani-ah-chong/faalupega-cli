@@ -16,3 +16,27 @@ export { amoaSasae } from "./amoasasae.js";
 export { amoaSisifo } from "./amoasisifo.js";
 export { lealatele } from "./lealatele.js";
 export { patamea } from "./patamea.js";
+// Atua i Saute
+export { saga } from "./saga.js";
+export { tafatafa } from "./tafatafa.js";
+export { matavai } from "./matavai.js";
+export { malaemalu } from "./malaemalu.js";
+export { satalo } from "./satalo.js";
+export { sapunaoa } from "./sapunaoa.js";
+export { piu } from "./piu.js";
+export { salesatele } from "./salesatele.js";
+export { siuniu } from "./siuniu.js";
+export { salani } from "./salani.js";
+export { sapoe } from "./sapoe.js";
+export { lepa } from "./lepa.js";
+export { lalomanu } from "./lalomanu.js";
+export { vailoaAtua } from "./vailoaAtua.js";
+export { ulutogia } from "./ulutogia.js";
+export { satitoa } from "./satitoa.js";
+// Atua i Matu
+export { lotofagaAtua } from "./lotofagaAtua.js";
+export { mutiatele } from "./mutiatele.js";
+export { saleaaumua } from "./saleaaumua.js";
+export { samusu } from "./samusu.js";
+export { amaile } from "./amaile.js";
+export { tiavea } from "./tiavea.js";

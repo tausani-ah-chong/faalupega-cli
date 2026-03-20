@@ -61,4 +61,7 @@ export interface Village {
 
   /** Sāvali — the village messenger/traveling representative (not all villages have this) */
   savali?: string;
+
+  /** ʻAva a Talima — traditional chant associated with some villages (not all villages have this) */
+  avaATalima?: string;
 }
