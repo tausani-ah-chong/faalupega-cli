@@ -16,3 +16,23 @@ export { amoaSasae } from "./amoasasae.js";
 export { amoaSisifo } from "./amoasisifo.js";
 export { lealatele } from "./lealatele.js";
 export { patamea } from "./patamea.js";
+// Tuamasaga i Matu
+export { laulii } from "./laulii.js";
+export { letogo } from "./letogo.js";
+export { saleupolu } from "./saleupolu.js";
+export { fuaiupolu } from "./fuaiupolu.js";
+export { sagauga } from "./sagauga.js";
+export { vaimoso } from "./vaimoso.js";
+export { lepea } from "./lepea.js";
+export { vailoaTuamasaga } from "./vailoaTuamasaga.js";
+export { vaiusu } from "./vaiusu.js";
+export { vaitele } from "./vaitele.js";
+export { faleula } from "./faleula.js";
+export { malie } from "./malie.js";
+export { afega } from "./afega.js";
+export { tuanai } from "./tuanai.js";
+export { saleimoa } from "./saleimoa.js";
+export { tufulele } from "./tufulele.js";
+// Faleata
+export { faleataDist } from "./faleataDist.js";
+export { safuneFaleata } from "./safuneFaleata.js";
