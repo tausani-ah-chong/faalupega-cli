@@ -1,4 +1,4 @@
-import { puipaa, tafua, toamua, salelologa, salelavalu, iva, vaiafai, vaisaulu, lalomalava, safotulafai, safua, sapapalii, tapueleele, faga, amoaSasae, amoaSisifo, lealatele, patamea } from "./1930/index.js";
+import { puipaa, tafua, toamua, salelologa, salelavalu, iva, vaiafai, vaisaulu, lalomalava, safotulafai, safua, sapapalii, tapueleele, faga, amoaSasae, amoaSisifo, lealatele, patamea, uafato, samamea, maasina, lona, taelefaga, salimuMaMaauga, musumusu, saletele, sauago, falefa, falevao, lalomauga, manunu, faleapuna, lufilufi, safanua, salelesi, saluafata, fusiVaaOFonoti, solosolo, luatuanuu } from "./1930/index.js";
 import type { Village } from "../types.js";
 
-export const allVillages: Village[] = [puipaa, tafua, toamua, salelologa, salelavalu, iva, vaiafai, vaisaulu, lalomalava, safotulafai, safua, sapapalii, tapueleele, faga, amoaSasae, amoaSisifo, lealatele, patamea];
+export const allVillages: Village[] = [puipaa, tafua, toamua, salelologa, salelavalu, iva, vaiafai, vaisaulu, lalomalava, safotulafai, safua, sapapalii, tapueleele, faga, amoaSasae, amoaSisifo, lealatele, patamea, uafato, samamea, maasina, lona, taelefaga, salimuMaMaauga, musumusu, saletele, sauago, falefa, falevao, lalomauga, manunu, faleapuna, lufilufi, safanua, salelesi, saluafata, fusiVaaOFonoti, solosolo, luatuanuu];
