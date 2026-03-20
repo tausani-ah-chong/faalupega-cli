@@ -1,0 +1,78 @@
+import { Village } from "../../types.js";
+
+export const siumu: Village = {
+  version: "1930",
+  name: "Siʻumu",
+  district: "Tuamasaga i Saute",
+  island: "Upolu",
+
+  tulou: [
+    "Tulouna a oe Satuʻuʻu",
+    "a lau fetalaiga a Tuʻuʻu",
+    "le falelua o tulafale o Magō ma Faoagali",
+    "a Sa Asomua",
+    "Susū mai lau Susuga a Asomua",
+    "Tulouna le faleagafulu o alo o Asomua",
+    "a le muliauuma escese o sa Asomua",
+    "a le Galutaulelea",
+    "a oe le Faletolu, (Masi ma Asuao ma Tonumailau)",
+    "a le aiga sa Matua",
+    "a lau Susuga a le Matua o Nonu",
+    "a lau afioga a Tofaeono, ma lau Falefā, (Misa, Tanealaʻepā, Atuaia, Tautaga'afa)",
+    "a lau afioga Atanoa ma lau Falefā (Suʻa, Leatigaga, Ievase, Lutuiloa",
+    "tamaʻitaʻi o Tapusalaia ma Talaʻepā",
+    "a lau Susuga a Lutuiloa ma ou alo tutusa, (Poʻe, Tiumalu ma Afoa",
+    "a le saolua o Tutagalevao",
+    "a le Matua o Taliaivao",
+    "a Alo o Taleta (o Suifaatau, Toloafā ma Liʻulevaega",
+    "a oulua matua o Fitiao ma Fetani",
+    "a oe le Alātaua",
+    "a le Lima matua o Alātaua",
+    "a le fofoga o Alātaua o lau tōfā a Liʻo",
+    "Siʻutoga ma Atipate",
+    "a oe le Faletolu",
+    "a lau Susuga a le Maʻupū o Tafilipepe o le faleagafulu a Asomua",
+  ],
+
+  maotaOAlii: [
+    { title: "Nonu", details: ["Asoʻai"] },
+    { title: "Talaiiulotu", details: ["Fale soa"] },
+    { title: "Faaʻitenuu", details: ["Falemumuta"] },
+    { title: "Masi, Asomua", details: ["Asomaʻauga"] },
+    { title: "Tupuola", details: ["Falemusa"] },
+    { title: "Asuao", details: ["Lupeseʻe"] },
+    { title: "Atanoa", details: ["Seleivaa"] },
+    { title: "Mailau", details: ["Levi"] },
+    { title: "Tapusalaia", details: ["Maota"] },
+    { title: "Talaʻepā", details: ["Tulāpou"] },
+    { title: "Tofaeono", details: ["Taumainumau. (O le toʻaiga o Tumua)"] },
+    { title: "O le laoa o Liʻo", details: ["Lānpatatafetaliʻi"] },
+  ],
+
+  malaeFono: [
+    { title: "Palalaua, ʻAavasuifua, Matafala, Mulivai", details: ["Na faaaʻe i ai le va gata ma le va gatai e faaola ai le sala tutu ma le sala toto. O le malae lea ua nofo ai Tuʻuʻu e tapuaʻi ai alo o Asomua, a sulu i ai le pagotā ua ola"] },
+  ],
+
+  igoaIpu: [
+    { title: "Atanoa", details: ["ʻAmia i malo"] },
+    { title: "Tofaeono", details: ["Faasoo ma Tumua"] },
+    { title: "Nonu", details: ["Uʻmatavaʻe"] },
+    { title: "Mailau", details: ["Afiafi lelei"] },
+    { title: "Masi", details: ["Nuuaofia"] },
+    { title: "Asuao", details: ["Taeao lelei"] },
+    { title: "Tupuola", details: ["Manū faaifo mai lagi"] },
+    { title: "Tapusalaia", details: ["Maeʻa aumai le ipu a Tapusalaia"] },
+    { title: "Talaʻepā", details: ["Vetea ua tau"] },
+    { title: "Misa", details: ["Tautaaiʻogavao"] },
+    { title: "Lutuiloa", details: ["Logovaega"] },
+    { title: "Tutagalevao", details: ["Sola i ʻau tele"] },
+    { title: "Taunuafono", details: ["Toilalo i faigā"] },
+    { title: "Fitiao", details: ["Malōpule"] },
+    { title: "Faalogo", details: ["Fotuaʻi Matapāgofie"] },
+  ],
+
+  saotamaitai: [
+    { title: "Tofaeono", details: ["Tapusalaia"] },
+    { title: "Atanoa", details: ["Talaʻepā"] },
+  ],
+};
