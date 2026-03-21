@@ -8,12 +8,12 @@ export const safotu: Village = {
 
   tulou: [
     "Tulouna a oe le Alii o Leitu",
-    "oe na mua i Mālae",
-    "le Falefa o lo outou Aiga sa Umalau",
+    "Tulouna oe na mua i Malae",
+    "Tulouna le Falefa o lo outou Aiga sa Umalau",
     "Afio mai Afitu ma le matua o Tapusoa",
     "Afio mai Utumapu",
     "Alaala mai lau tōfā a Lavea",
-    "mai le ati Pouniu ma le Faasau",
+    "Alaala mai le ati Pouniu ma le Faasau",
     "Susū mai Le Lilomaiava",
     "Tulouna a Vae o le Nofoafia",
   ],
