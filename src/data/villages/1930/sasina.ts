@@ -8,16 +8,16 @@ export const sasina: Village = {
 
   tulou: [
     "Tulouna a le Faletolu",
-    "le Aiga sa Leasi",
-    "le Aiga o Mavaega",
+    "Tulouna le Aiga sa Leasi",
+    "Tulouna le Aiga o Mavaega",
     "Afifio mai Togoiʻu ma Vaganā",
     "Afio mai Polataʻivao",
     "Afio mai le Matua o Leasi",
     "Susū mai le Toemanava. (Ao)",
     "Tulouna a le Aiga sa Lealiifano",
-    "le Afioga a Lealiifano",
-    "le Saitupua",
-    "le ati Luatoga",
+    "Tulouna le Afioga a Lealiifano",
+    "Tulouna le Saitupua",
+    "Tulouna le ati Luatoga",
   ],
 
   malaeFono: [
@@ -26,7 +26,7 @@ export const sasina: Village = {
 
   maotaOAlii: [
     { title: "Leasi", details: ["Tapaga"] },
-    { title: "Togoiʻu", details: ["Vailiili"] },
+    { title: "Togoiʻu", details: ["Vaiiliili"] },
     { title: "Vaganā", details: ["Maumoe"] },
     { title: "Polataʻivao", details: ["Malaetele"] },
     { title: "Lealiifano", details: ["Leiliili"] },
