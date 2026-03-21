@@ -8,13 +8,13 @@ export const neiafu: Village = {
 
   tulou: [
     "Tulouna oe Lealataua",
-    "le Soliga",
-    "oulua igoa",
-    "Tapaaulefano",
-    "le aiga Lufilufi",
+    "Tulouna le Soliga",
+    "Tulouna oulua igoa",
+    "Tulouna Tapaaulefano",
+    "Tulouna le aiga Lufilufi",
     "Susū mai ia o Sa Moeleoi",
-    "Tulouna le Inaʻilanoʻo o lou tou aiga Sa Moeleoi",
-    "le Aifaaogā o Aliimalemanu ma le toafā o Pei ma Aunei ma Saiu ma Lafaitele",
+    "Tulouna le Inaʻilauoʻo o lou tou aiga Sa Moeleoi",
+    "Tulouna le Aifaaaogā o Aliimalemanu ma le toafā o Pei ma Aunei ma Safiu ma Lafaitele",
     "Susū mai lou tou matua o Tauiliili",
     "Afifio mai ia o outou Tapaʻau",
     "Afio mai lau Afioga le matua o Nonumalo",
@@ -29,8 +29,12 @@ export const neiafu: Village = {
 
   maotaOAlii: [
     { title: "Tonumaipeʻa", details: ["Savelu"] },
+    { title: "Sa Moeleoi", details: ["Faleʻulu"] },
     { title: "Tauiliili", details: ["Faleʻulu"] },
+    { title: "Pei", details: ["Utuao"] },
+    { title: "Aliimalemanu", details: ["Utuao"] },
     { title: "Faʻi", details: ["Utuao"] },
+    { title: "Sa Moeleoi e potopoto i ai", details: ["Faletamasoālii"] },
   ],
 
   igoaIpu: [
@@ -46,7 +50,7 @@ export const neiafu: Village = {
 
   saotamaitai: [
     { title: "Tonumaipeʻa", details: ["Tilomai"] },
-    { title: "Samalaʻulu", details: ["Samalaʻulu"] },
+    { title: "?", details: ["Samalaʻulu"] },
   ],
 
   ipuATamaitai: [
