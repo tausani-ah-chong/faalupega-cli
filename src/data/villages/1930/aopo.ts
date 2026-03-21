@@ -8,10 +8,10 @@ export const aopo: Village = {
 
   tulou: [
     "Tulouna a le Saeseese",
-    "le Susuga a Eʻetau, ma le ati Eʻetau",
+    "Tulouna le Susuga a Eʻetau, ma le ati Eʻetau",
     "Afifio mai Tauaʻanae ma Matofai",
     "Tulouna le Falelima ma lau tōfā Paʻō",
-    "le Aiga o Mavaega",
+    "Tulouna le Aiga o Mavaega",
     "Susū mai lou Tapaau o le Tagaloa Aʻopo",
   ],
 
@@ -20,6 +20,7 @@ export const aopo: Village = {
   ],
 
   maotaOAlii: [
+    { title: "Tauaanae", details: ["Faletoi"] },
     { title: "Matofai", details: ["Faletoi"] },
     { title: "Le ati Eʻetau", details: ["Faalefu"] },
   ],
@@ -31,6 +32,7 @@ export const aopo: Village = {
   ],
 
   saotamaitai: [
+    { title: "Tauaanae", details: ["Vifala"] },
     { title: "Matofai", details: ["Vifala"] },
     { title: "Ati Eʻetau", details: ["Seveoti"] },
   ],
