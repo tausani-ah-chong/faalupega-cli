@@ -11,7 +11,7 @@ export const fagasaItuOTane: Village = {
     "Afifio mai Ufagalilo ma Luapitofanua",
     "Afio mai Maʻupū o Toleafoa",
     "Susū mai le Tagaloa o le alii o le nuu",
-    "Tulouna a lau fetalaiga a ʻAunua ma Maninoa",
+    "Tulouna a lau fetalaiga a ʻAumua ma Maninoa",
   ],
 
   malaeFono: [],
