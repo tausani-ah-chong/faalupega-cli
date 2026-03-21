@@ -8,7 +8,7 @@ export const satoalepai: Village = {
 
   tulou: [
     "Tulouna a sa Toalepai",
-    "lau tōfā Mauigoa o le aitu tagata",
+    "Tulouna lau tōfā Mauigoa o le aitu tagata",
     "Afifio mai sā Pesetā",
     "Susū mai Mataiʻa, Afio mai Maiava",
     "Afio mai Toalepai",
