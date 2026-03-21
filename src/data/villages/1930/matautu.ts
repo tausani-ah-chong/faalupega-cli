@@ -8,9 +8,9 @@ export const matautu: Village = {
 
   tulou: [
     "Tulouna a oe le Matautu",
-    "ou aao le Matautu",
-    "lou tou Faleiva",
-    "lou tino o Lepulu",
+    "Tulouna ou aao le Matautu",
+    "Tulouna lou tou Faleiva",
+    "Tulouna lou tino o Lepulu",
     "Afifio mai sā Pesetā",
     "Afifio mai Lilo ma Lemaveve",
     "Afio mai Suisala",
@@ -23,7 +23,7 @@ export const matautu: Village = {
   ],
 
   maotaOAlii: [
-    { title: "Suisala", details: ["Fauuatanu"] },
+    { title: "Suisala", details: ["Fanuatanu"] },
     { title: "Leota", details: ["Avao"] },
     { title: "Mataiʻa", details: ["Falefaamaoi"] },
     { title: "Maiava", details: ["Siliga"] },
@@ -34,7 +34,8 @@ export const matautu: Village = {
   igoaIpu: [
     { title: "Suisala", details: ["1. Sootaga le muia. 2. Pule ma Tumua aumai le Malo ua maua"] },
     { title: "Maiava", details: ["1. Numia ma Tumua. 2. Numia ma Aiga."] },
-    { title: "Leota", details: ["Puleiʻaʻava", "E tapa fua isi alii"] },
+    { title: "Leota", details: ["Puleiʻaʻava"] },
+    { title: "E tapa fua isi alii", details: [] },
   ],
 
   aualumaOTane: ["Sā Pesetā"],
