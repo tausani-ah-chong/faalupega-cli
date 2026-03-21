@@ -8,9 +8,9 @@ export const sataua: Village = {
 
   tulou: [
     "Tulouna a oe Taua",
-    "oe le Vaaivao",
-    "le Falefa o Sataua",
-    "lau tōfā Leʻaluga ma ou aao Leʻaluga",
+    "Tulouna oe le Vaaivao",
+    "Tulouna le Falefa o Sataua",
+    "Tulouna lau tōfā Leʻaluga ma ou aao Leʻaluga",
     "Afifio mai ia le aiga o Mavaega",
     "Afifio mai Mataʻutia ma Lesatele",
     "Afio mai Tupua ma le ʻAumaga ma sa Taneavae",
@@ -23,8 +23,9 @@ export const sataua: Village = {
   ],
 
   maotaOAlii: [
-    { title: "Mataʻutia", details: ["Faanualii"] },
-    { title: "Lesatele", details: ["Faanualii"] },
+    { title: "Mataʻutia", details: ["Faanuualii"] },
+    { title: "Lesatele", details: ["Faanuualii"] },
+    { title: "Satele", details: ["Fogavii"] },
     { title: "Leʻaluga", details: ["Logogalaʻi"] },
     { title: "Levalasi", details: ["Papaefea"] },
     { title: "Afamasaga", details: ["Foua"] },
@@ -32,11 +33,11 @@ export const sataua: Village = {
 
   igoaIpu: [
     { title: "Mataʻutia", details: ["Alii lelei ma Tumua"] },
-    { title: "Lesatele", details: ["Talanoa, ua i alo aumai aʻufaga ma Tumua"] },
+    { title: "Lesatele", details: ["Talanoa, ua i alo aumai alafaga ma Tumua"] },
     { title: "Levalasi", details: ["E tapa fua"] },
     { title: "Afamasaga", details: ["Seu i Nuutasi"] },
     { title: "Suisala", details: ["Seuga tauʻai"] },
-    { title: "Tuiavii", details: ["Fonomanuʻe"] },
+    { title: "Tuiavii", details: ["Fonomatuʻe"] },
     { title: "Tupua", details: ["Lagofaatasi"] },
     { title: "Vaetoe", details: ["Taua ma lupe vao"] },
     { title: "ʻIli", details: ["Faiaga a tagata ola a e le iʻu"] },
@@ -45,8 +46,14 @@ export const sataua: Village = {
   aualumaOTane: ["Sa Toleafoā"],
 
   saotamaitai: [
-    { title: "Mataʻutia, Lesatele", details: ["Tupua—Seutatia"] },
-    { title: "Levalasi, ʻIli, Vaetoe", details: ["Leʻaluga—Fofoaivaoese"] },
-    { title: "Afamasaga, Mataʻiliga", details: ["Punipuao"] },
+    { title: "Mataʻutia, Lesatele", details: ["Seutatia"] },
+    { title: "Lesatele", details: ["Seutatia"] },
+    { title: "Tupua", details: ["Seutatia"] },
+    { title: "Levalasi", details: ["Fofoaivaoese"] },
+    { title: "ʻIli", details: ["Fofoaivaoese"] },
+    { title: "Vaetoe", details: ["Fofoaivaoese"] },
+    { title: "Leʻaluga", details: ["Fofoaivaoese"] },
+    { title: "Afamasaga", details: ["Punipuao"] },
+    { title: "Mataʻiliga", details: ["Punipuao"] },
   ],
 };
