@@ -8,14 +8,14 @@ export const saleaula: Village = {
 
   tulou: [
     "Tulouna oe le Pule,",
-    "lau Faatufugaga",
-    "le Tufuga pule, ma le Tūfuga toʻatamaʻi",
+    "Tulouna lau Faatufugaga",
+    "Tulouna le Tufuga pule, ma le Tūfuga toʻatamaʻi",
     "Afifio mai alii e lua,",
     "Afio mai Tautaiolefue",
     "Susū mai Tauʻiliʻili",
     "Alaala mai Imoa",
     "Afifio mai Maʻupū o Fepuleaʻi ma Toiaivao",
-    "Tulouna sa Pasetā o Vou ma Seūpule",
+    "Tulouna sa Pasetā o Vou ma Seupule",
   ],
 
   malaeFono: [
