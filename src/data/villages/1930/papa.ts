@@ -22,7 +22,7 @@ export const papaItuOTane: Village = {
   igoaIpu: [
     { title: "Suʻa", details: ["Logotaeao"] },
     { title: "Faavaoga", details: ["Tagata lautele tautala i Malo"] },
-    { title: "Tapusoa", details: ["Alii faaea Falenpolu"] },
+    { title: "Tapusoa", details: ["Alii faaea Faleupolu"] },
   ],
 
   aualumaOTane: ["Sā Toleafoā"],
