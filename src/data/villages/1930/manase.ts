@@ -8,7 +8,7 @@ export const manase: Village = {
 
   tulou: [
     "Tulouna a le Tauasa, o Susū ai Taito ma ona alo",
-    "le Aiga o sa Umalau",
+    "Tulouna le Aiga o sa Umalau",
   ],
 
   malaeFono: [
