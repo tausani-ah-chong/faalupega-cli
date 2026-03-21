@@ -8,12 +8,12 @@ export const samauga: Village = {
 
   tulou: [
     "Tulouna a oe Samauga",
-    "le Aiga sa Peseta",
-    "le nofo matua o Tuu, ma lau Faleagafulu",
-    "le Falelima o alo Naʻi",
+    "Tulouna le Aiga sa Peseta",
+    "Tulouna le nofo matua o Tuu, ma lau Faleagafulu",
+    "Tulouna le Falelima o alo Naʻi",
     "Tulouna a lau Afioga a Malaitai ma lou Usoalii",
-    "lau Susuga a Tuaʻilemafua",
-    "lau Afioga a Fuimaono",
+    "Tulouna lau Susuga a Tuaʻilemafua",
+    "Tulouna lau Afioga a Fuimaono",
     "Susū mai lou tapaʻau o le Fetafune",
   ],
 
@@ -37,7 +37,7 @@ export const samauga: Village = {
     { title: "ʻAu", details: ["Lefepoiaʻi"] },
   ],
 
-  aualumaOTane: ["Sa Pesetā"],
+  aualumaOTane: ["Sa Peseta"],
 
   saotamaitai: [
     { title: "Tuu", details: ["Faanāʻitaua"] },
