@@ -8,10 +8,10 @@ export const vaisala: Village = {
 
   tulou: [
     "Tulouna a oe Safune",
-    "Taulauniu, o Gale ma Tuiasau",
-    "Sa Oloʻapu",
-    "lau Susuga le Gafa",
-    "Afio mai au Afioga a Toomata",
+    "Tulouna Taulauniu, o Gale ma Tuiasau",
+    "Tulouna Sa Oloʻapu",
+    "Tulouna lau Susuga le Gafa",
+    "Afio mai lau Afioga a Toomata",
     "Afio mai Vaai o le alo-alii",
     "Tulouna a sa Tapu ma le Atimanutai",
   ],
@@ -34,12 +34,13 @@ export const vaisala: Village = {
     { title: "Tagaloa", details: ["Tauese talitali le ipu, a e taute le Tagaloa"] },
   ],
 
-  aualumaOTane: ["Sa Leota. Lana ipu—Puleiʻaʻava"],
+  aualumaOTane: ["Sa Leota. Lana ipu-Puleiʻaʻava"],
 
   saotamaitai: [
     { title: "Toomata", details: ["Iliganoa"] },
     { title: "Vaipule", details: ["Leofao"] },
     { title: "Vaai", details: ["Lanilepapa"] },
     { title: "Tapu", details: ["Filiiʻamata"] },
+    { title: "E tapa fua a latou ipu", details: [] },
   ],
 };
