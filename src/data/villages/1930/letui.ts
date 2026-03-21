@@ -8,15 +8,16 @@ export const letui: Village = {
 
   tulou: [
     "Tulouna a oe sa Letolo",
-    "le Falelupe",
-    "lau fetalaiga a Fiu",
-    "Fatua",
-    "le ati Ulumea",
-    "Muamaloipua",
+    "Tulouna le Falelupe",
+    "Tulouna lau fetalaiga a Fiu",
+    "Tulouna Fatua",
+    "Tulouna le ati Ulumea",
+    "Tulouna Muamaloipua",
   ],
 
   malaeFono: [
     { title: "Punaʻoa", details: [] },
+    { title: "E tapa fua ipu a Alii", details: [] },
   ],
 
   maotaOAlii: [],
