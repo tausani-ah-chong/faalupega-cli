@@ -1,4 +1,4 @@
-import { Village } from "../../types.js";
+ import { Village } from "../../types.js";
 
 export const falealupo: Village = {
   version: "1930",
@@ -8,12 +8,12 @@ export const falealupo: Village = {
 
   tulou: [
     "Tulouna a oe le Tapuaiga",
-    "le falefā o le Tapuaiga",
-    "Lau Afioga Auvaa",
-    "Alo o Sina o le aiga sa Seumanutafa",
-    "Le Gafa o lau Susuga a Aʻeʻau ma Ugapo ma Faleatanoaʻi",
-    "Lau Afioga a Lamositele",
-    "a Maʻupū o Nafanua o lau Afioga a Solia ma Foaʻimea",
+    "Tulouna le falefā o le Tapuaiga",
+    "Tulouna Lau Afioga Auvaa",
+    "Tulouna Alo o Sina o le aiga sa Seumanutafa",
+    "Tulouna Le Gafa o lau Susuga a Aʻeʻau ma Ugapo ma Faleatanoaʻi",
+    "Tulouna Lau Afioga a Lamositele",
+    "Tulouna a Maʻupū o Nafanua o lau Afioga a Solia ma Foaʻimea",
   ],
 
   malaeFono: [],
@@ -21,7 +21,7 @@ export const falealupo: Village = {
   maotaOAlii: [
     { title: "Auvaa", details: ["Filimā"] },
     { title: "Puletuu", details: ["Na to ai Manū"] },
-    { title: "Sā Seumanutafā", details: ["Pontoā"] },
+    { title: "Sā Seumanutafā", details: ["Poutoā"] },
     { title: "Aʻeʻau", details: ["Faleʻolo"] },
     { title: "Lamositele", details: ["Titiouatoa"] },
     { title: "Solia ma Foaʻimea", details: ["Tapusita"] },
@@ -49,7 +49,7 @@ export const falealupo: Village = {
 
   ipuATamaitai: [
     { title: "Tilomai", details: ["Lepaineneʻa"] },
-    { title: "Soimavi", details: ["Manaiaivaa"] },
+    { title: "Soimavi", details: ["Manaiauivaa"] },
     { title: "ʻApaʻula", details: ["Taupoloatu"] },
     { title: "Iliganoa", details: ["E tapa fua"] },
   ],
