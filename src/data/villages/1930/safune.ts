@@ -8,15 +8,15 @@ export const safune: Village = {
 
   tulou: [
     "Tulouna a oe Safune",
-    "Taulauniu",
-    "le toafia o Tulafale",
-    "Moana ma Tuliatu",
-    "Sa Oloʻapu",
-    "le toafa o Alii",
-    "le fetalaiga a Tuu—Matavai",
-    "le fale fa o Sausi",
-    "le fanau alii",
-    "le Susuga a le Tagaloa",
+    "Tulouna Taulauniu",
+    "Tulouna le toafia o Tulafale",
+    "Tulouna Moana ma Tuliatu",
+    "Tulouna Sa Oloʻapu",
+    "Tulouna le toafa o Alii",
+    "Tulouna le fetalaiga a Tuu—Matavai",
+    "Tulouna le fale fa o Sausi",
+    "Tulouna le fanau alii",
+    "Tulouna le Susuga a le Tagaloa",
   ],
 
   malaeFono: [
