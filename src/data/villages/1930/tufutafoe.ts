@@ -9,7 +9,7 @@ export const tufutafoe: Village = {
   tulou: [
     "Tulouna a oe le Fuaiala o Usu",
     "Afifio mai Usoalii",
-    "Afifio mai Maiava ma Siliata",
+    "Afifio mai Maiava ma Siilata",
     "Susū mai Afualo",
     "Afio mai la outou tama o Gisa",
     "Afio mai Toleafoa o le Tuiaana ave ʻau malaga ia Leulumoega",
@@ -23,19 +23,20 @@ export const tufutafoe: Village = {
 
   maotaOAlii: [
     { title: "Gisa", details: ["Mutiatai"] },
-    { title: "Tuifaiga", details: ["Manaluga"] },
+    { title: "Tuifaiga", details: ["Maualuga"] },
     { title: "Le Seuʻula", details: ["Seuʻulā"] },
-    { title: "Siliata", details: ["Faanumāmama"] },
+    { title: "Siliata", details: ["Faamuāmama"] },
   ],
 
   igoaIpu: [
-    { title: "Maiava", details: ["Vaipalolo seogamalie"] },
+    { title: "Maiava", details: ["Vaipalolo saogamalie"] },
     { title: "Afualo", details: ["Numia ma le Alataua"] },
     { title: "Toleafoa", details: ["Moeaiʻa talitali le ipu a e taute Toleafoa"] },
     { title: "Gisa", details: ["Puleiʻaleaga"] },
     { title: "Aiolupotea", details: ["Fiafaaofo"] },
+    { title: "Tuifaiga", details: ["Tuigāfuagafulu"] },
     { title: "Seuula", details: ["E tapa fua"] },
-    { title: "Siliata", details: ["E tapa fua"] },
+    { title: "Siilata", details: ["E tapa fua"] },
   ],
 
   aualumaOTane: ["Toleafoa. Lana igoā-ipu—Moeaiʻa talitali le ipu a e taute Toleafoa"],
@@ -46,7 +47,7 @@ export const tufutafoe: Village = {
     { title: "Toleafoa", details: ["Tilomai"] },
     { title: "Gisa", details: ["Tilomai"] },
     { title: "Seuʻula", details: ["Lealaiaʻega"] },
-    { title: "Siliata", details: ["Apaʻula"] },
+    { title: "Siilata", details: ["Apaʻula"] },
   ],
 
   ipuATamaitai: [
