@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { formatVillage, formatMataiResult, formatVersionBox } from "../src/format.js";
-import { findMataiMatches } from "../src/search.js";
 import { puipaa } from "../src/data/villages/1930/puipaa.js";
+import type { MataiSearchResult } from "../src/search.js";
 
 describe("formatVersionBox", () => {
   it("renders a bracketed box with the version", () => {
@@ -71,38 +71,82 @@ describe("formatVillage", () => {
   });
 });
 
-describe("formatMataiResult", () => {
+describe("formatMataiResult (unit)", () => {
+  const mockResult: MataiSearchResult = {
+    village: {
+      version: "1930",
+      name: "Puipaʻa",
+      district: "Faleata",
+      island: "Upolu",
+      tulou: ["Tulouna lau tofa Seiulialii"],
+      malaeFono: [{ title: "Lepea", details: ["Fono o le manino (filemu)"] }],
+      maotaOAlii: [{ title: "Seiuli", details: ["Vaiusu"] }],
+      igoaIpu: [
+        { title: "Seiuli", details: ["Fai ʻava le ita", "Talitigā", "Numia ma Tumua"] },
+        { title: "Sāvali", details: ["Ulugia ma Faleʻafa"] },
+      ],
+      saotamaitai: [{ title: "Seiuli", details: ["Vaiusu"] }],
+    },
+    matches: [
+      {
+        section: "MAOTA O ALII",
+        entries: [{ title: "Seiuli", details: ["Vaiusu"] }],
+      },
+      {
+        section: "O IGOA-IPU A ALII",
+        entries: [{ title: "Seiuli", details: ["Fai ʻava le ita", "Talitigā", "Numia ma Tumua"] }],
+      },
+      {
+        section: "SAʻOTAMAʻITAʻI",
+        entries: [{ title: "Seiuli", details: ["Vaiusu"] }],
+      },
+    ],
+  };
+
   it("shows village name header", () => {
-    const results = findMataiMatches("Seiuli");
-    const output = formatMataiResult(results[0]);
+    const output = formatMataiResult(mockResult);
     expect(output).toContain("PUIPAʻA \u2014 Faleata, Upolu");
   });
 
   it("shows only matching entries, not full record", () => {
-    const results = findMataiMatches("Seiuli");
-    const output = formatMataiResult(results[0]);
+    const output = formatMataiResult(mockResult);
     expect(output).toContain("Seiuli");
-    // Should NOT contain unrelated entries
     expect(output).not.toContain("Lepea");
-    expect(output).not.toContain("Vaitagutu");
+  });
+
+  it("formats single-detail entries with em-dash", () => {
+    const output = formatMataiResult(mockResult);
+    expect(output).toContain("Seiuli \u2014 Vaiusu");
   });
 
   it("shows matching tulou when applicable", () => {
-    const results = findMataiMatches("ulu");
-    const output = formatMataiResult(results[0]);
+    const resultWithTulou: MataiSearchResult = {
+      ...mockResult,
+      matches: [
+        {
+          section: "TULOU",
+          entries: [{ title: "Tulouna lau tofa Seiulialii", details: [] }],
+        },
+        ...mockResult.matches,
+      ],
+    };
+    const output = formatMataiResult(resultWithTulou);
     expect(output).toContain("TULOU:");
     expect(output).toContain("Tulouna lau tofa");
   });
 
-  it("formats single-detail entries with em-dash", () => {
-    const results = findMataiMatches("Seiuli");
-    const output = formatMataiResult(results[0]);
-    expect(output).toContain("Seiuli \u2014 Vaiusu");
-  });
-
   it("follows standard section order in matches", () => {
-    const results = findMataiMatches("ulu");
-    const output = formatMataiResult(results[0]);
+    const resultWithTulou: MataiSearchResult = {
+      ...mockResult,
+      matches: [
+        {
+          section: "TULOU",
+          entries: [{ title: "Tulouna lau tofa Seiulialii", details: [] }],
+        },
+        ...mockResult.matches,
+      ],
+    };
+    const output = formatMataiResult(resultWithTulou);
     const tulouPos = output.indexOf("TULOU:");
     const saotaPos = output.indexOf("SAʻOTAMAʻITAʻI:");
     expect(tulouPos).toBeLessThan(saotaPos);

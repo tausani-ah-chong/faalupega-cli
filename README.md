@@ -4,7 +4,7 @@
 
 Samoan Faalupega Lookup Tool — a searchable CLI reference for traditional matai (chief) title records.
 
-> **Research project — work in progress.** This tool is currently intended for research purposes only. The data is being individually cross-checked village by village and only 3 villages are available so far: **Puipa'a**, **Tafua**, and **Toamua** (all from the 1930 edition). More villages will be added as verification continues.
+> **Research project — work in progress.** This tool is intended for research and educational purposes only. Villages from the 1930 edition are being added as verification continues.
 
 ## What is Faalupega?
 
@@ -84,13 +84,13 @@ faalupega matai --help
 
 ## Available Data
 
-Currently only the **1930** edition is included, with 3 villages verified so far:
+Currently only the **1930** edition is included, with 18 villages across 3 districts:
 
-| Village | District | Island |
-|---------|----------|--------|
-| Puipaʻa | Faleata | Upolu |
-| Tafua | Faʻasaleleaga | Savaiʻi |
-| Toamua | Faleata | Upolu |
+| District | Island | Villages |
+|----------|--------|----------|
+| Faleata | Upolu | Puipaʻa, Toamua |
+| Faʻasaleleaga | Savaiʻi | Tafua, Salelologa, Salelavalu, ʻIva, Vaiʻafai, Vaisaʻulu, Lalomalava, Safotulafai, Safua, Sapapalii, Tapueleele, Faga, Amoa Sasaʻe, Amoa Sisifo |
+| O le Itu-o-Tane | Savaiʻi | Lealatele, Patamea |
 
 Each village record includes (where applicable):
 - **Tulou** — the ceremonial address/salutation
@@ -172,6 +172,14 @@ You can run faalupega-cli in the browser using WebContainers. Run `npm run build
 
 See [WEB_SNAPSHOT.md](./WEB_SNAPSHOT.md) for full step-by-step integration instructions.
 
+## Data Source & Copyright
+
+The faalupega data in this project is derived from *O le tusi faalupega o Samoa : Savaii, Upolu, Manono, Ma Apolima* (1930), held by the National Library of Australia ([nla.obj-52422940](https://nla.gov.au:443/nla.obj-52422940)). This publication is **in copyright until 2071**.
+
+This tool is intended for **research and educational purposes only**. Please respect indigenous cultural and ethical concerns when using this data.
+
+See [DATA_SOURCES.md](./DATA_SOURCES.md) for full attribution and copyright details.
+
 ## License
 
-MIT
+MIT — covers the software only. See [DATA_SOURCES.md](./DATA_SOURCES.md) for data copyright information.
