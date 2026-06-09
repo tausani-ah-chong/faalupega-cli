@@ -8,9 +8,9 @@ export const fagafau: Village = {
 
   tulou: [
     "Tulouna a sa Soā",
-    "le Falefa o Saomai",
-    "Alo o Lilomaiava o Seve ma Faga, ma la la tama fanau o le Susuga a Saʻu",
-    "lau Afioga a Tuimaugapō ma lo latou aiga",
+    "Tulouna le Falefa o Saomai",
+    "Tulouna Alo o Lilomaiava o Seve ma Faga, ma la la tama fanau o le Susuga a Saʻu",
+    "Tulouna lau Afioga a Tuimaugapō ma lo latou aiga",
   ],
 
   malaeFono: [
@@ -26,5 +26,6 @@ export const fagafau: Village = {
     { title: "Faga", details: ["Tooā"] },
     { title: "Seve", details: ["Fuatino"] },
     { title: "Tuimauga", details: ["Afegaitino oti"] },
+    { title: "E tapa fua a latou ipu", details: [] },
   ],
 };
