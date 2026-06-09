@@ -29,7 +29,7 @@ export { salailua } from "./salailua.js";
 export { taga } from "./taga.js";
 export { gautavai-sili-vaiala } from "./gautavai-sili-vaiala.js";
 export { gataivai } from "./gataivai.js";
-export { papaItuOTeine } from "./papaItuOTeine.js";
+export { papa } from "./papa.js";
 export { puleia } from "./puleia.js";
 export { satupaitea } from "./satupaitea.js";
 export { vailoa } from "./vailoa.js";
