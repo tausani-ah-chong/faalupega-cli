@@ -8,11 +8,11 @@ export const fogatuli: Village = {
 
   tulou: [
     "Tulouna lau Afioga Afualo ma ou alo e toafā",
-    "Lau fetalaiga a Faʻimanu o le fofoga o Usoalii",
+    "Tulouna Lau fetalaiga a Faʻimanu o le fofoga o Usoalii",
   ],
 
   malaeFono: [
-    { title: "Malaeaʻalemā", details: ["e i Faiʻaʻai"] },
+    { title: "Malaealemā", details: ["e i Faiʻaʻai"] },
   ],
 
   maotaOAlii: [],
