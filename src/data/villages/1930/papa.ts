@@ -1,6 +1,6 @@
 import { Village } from "../../types.js";
 
-export const papaItuOTeine: Village = {
+export const papa: Village = {
   version: "1930",
   name: "Papa",
   district: "O le Itu-o-Teine",
@@ -9,7 +9,7 @@ export const papaItuOTeine: Village = {
   tulou: [
     "Tulouna a sa Uluitoga",
     "Susū mai Silofau ma Faumuina ma le fetalaiga a Maūisii, ma le aiga sa Taematua",
-    "Ulupoao",
+    "Susū mai Ulupoao",
   ],
 
   malaeFono: [],
@@ -18,10 +18,11 @@ export const papaItuOTeine: Village = {
 
   igoaIpu: [
     { title: "Ulupoao", details: ["Tuisatā talitali mai le ipu a Ulupoao"] },
-    { title: "Silofau, Faumuinā", details: ["E tapa fua"] },
+    { title: "Silofau", details: ["E tapa fua"] },
+    { title: "Faumuinā", details: ["E tapa fua"] },
   ],
 
   saotamaitai: [
-    { title: "Faaiʻialofa", details: ["O lana ipu—E tapa fua"] },
+    { title: "Faaiʻialofa", details: ["O lana ipu - E tapa fua"] },
   ],
 };
