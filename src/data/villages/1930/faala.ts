@@ -2,14 +2,14 @@ import { Village } from "../../types.js";
 
 export const faala: Village = {
   version: "1930",
-  name: "Faala",
+  name: "Faala (Palauli)",
   district: "O le Itu-o-Teine",
   island: "Savaiʻi",
 
   tulou: [
     "Tulouna oe le Tulafale",
-    "lou tou Usoga o Tui ma Tapusoa",
-    "lau fetalaiga a Lagaaia o le Saʻo fetalai",
+    "Tulouna lou tou Usoga o Tui ma Tapusoa",
+    "Tulouna lau fetalaiga a Lagaaia o le Saʻo fetalai",
   ],
 
   malaeFono: [
@@ -18,12 +18,13 @@ export const faala: Village = {
     { title: "Leituala", details: ["Puloulou"] },
     { title: "Leavai", details: ["Matāvai"] },
     { title: "Momo", details: ["Siʻumalae"] },
-    { title: "Iʻaulualo", details: ["Paepaelanniu"] },
+    { title: "Iʻaulualo", details: ["Paepaelauniu"] },
   ],
 
   maotaOAlii: [
-    { title: "Lelei", details: ["Vaifona"] },
-    { title: "Tualau", details: ["Lotolan"] },
+    { title: "Lelei", details: ["Vaifoua"] },
+    { title: "Tualau", details: ["Lotolau"] },
+    { title: "E faasino ia Malae ia Lufilufi ma Leulumoega", details: [] },
   ],
 
   igoaIpu: [
@@ -40,9 +41,9 @@ export const faala: Village = {
   aualumaOTane: ["Sa Lilomaiavā"],
 
   saotamaitai: [
-    { title: "Tualau", details: ["Samalaʻulu"] },
+    { title: "Tualau", details: ["Samalāʻulu"] },
     { title: "Tualau ma Lelei", details: ["Leteleataemā"] },
-    { title: "Tuimalealiifano", details: ["Lennaotele"] },
+    { title: "Tuimalealiifano", details: ["Leunaotele"] },
     { title: "Leituala", details: ["Lanuola"] },
     { title: "Leavai", details: ["Taufau"] },
     { title: "Momo", details: ["Latu"] },
@@ -51,5 +52,6 @@ export const faala: Village = {
 
   ipuATamaitai: [
     { title: "Lanuola", details: ["Nunu i Faleolo"] },
+    { title: "E tapa fua ipu a isi tama'ita'i", details: [] },
   ],
 };
