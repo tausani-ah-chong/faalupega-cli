@@ -8,15 +8,15 @@ export const gagaemalae: Village = {
 
   tulou: [
     "Tulouna a oe Gagaʻemalae",
-    "le Tama tasi i Faleupolu",
-    "le Susuga a Faatupuinati",
-    "le Susuga a Savaiinaea o lou Tapaau Gagaʻemalae",
-    "a le fale sefulu a Pesefea",
+    "Tulouna le Tama tasi i Faleupolu",
+    "Tulouna le Susuga a Faatupuinati",
+    "Tulouna le Susuga a Savaiinaea o lou Tapaau Gagaʻemalae",
+    "Tulouna a le fale sefulu a Pesefea",
     "Susū mai le Matua o Tauavamea, ma ou alo e toalua o Maʻilata ma Fanonoa",
     "Tulouna a le aiga sa Lilomaiava",
-    "le uso o Leilua ma Faliuga",
-    "lau Afioga a Leaupepe",
-    "lau Afioga a Letele",
+    "Tulouna le uso o Leilua ma Faliuga",
+    "Tulouna lau Afioga a Leaupepe",
+    "Tulouna lau Afioga a Letele",
   ],
 
   malaeFono: [
@@ -36,11 +36,12 @@ export const gagaemalae: Village = {
     { title: "Leaupepe", details: ["Taua ma lupe vao"] },
   ],
 
-  aualumaOTane: ["Pesefea manaia—E tapa fua lana ipu"],
+  aualumaOTane: ["Pesefea manaia — E tapa fua lana ipu"],
 
   saotamaitai: [
     { title: "Faatupuinati", details: ["Mataʻavauē"] },
     { title: "Tauavamea", details: ["Lomialagi"] },
     { title: "Leaupepe", details: ["Fuatino"] },
+    { title: "E tapa fua ipu a Tama'ita'i", details: [] },
   ],
 };
