@@ -8,15 +8,15 @@ export const gataivai: Village = {
 
   tulou: [
     "Tulouna oe Salemuliʻaga",
-    "Togiaʻi ma Faalaa. O Togiaʻi, o Fagamalo ma Tulia. O Faalaa, o Laupua ma Leuila",
-    "Tulouna le Fale-valu o le aiga sa Tua",
-    "Le ituala mavae o lau fetalaiga a Tiatia",
+    "Tulouna Togiaʻi ma Faalaa. O Togiaʻi, o Fagamalo ma Tulia. O Faalaa, o Laupua ma Leuila",
+    "Tulouna le Fale-valu o le aiga sa Tuā",
+    "Tulouna Le ituala mavae o lau fetalaiga a Tiatia",
     "Susū mai lou Tapaʻau o le Laʻulu",
-    "Maposua",
+    "Tulouna Maposua",
     "Tulouna a le matua o Umu ma Lautaufā",
     "Susū mai le matua o Toilolo, ma le Maʻupū o Leuluaʻialii",
     "Tulouna le suafa o Laʻulu",
-    "Le matua o Tuilau ma Ututaʻaloga",
+    "Tulouna Le matua o Tuilau ma Ututaʻaloga",
   ],
 
   malaeFono: [
@@ -28,14 +28,14 @@ export const gataivai: Village = {
   ],
 
   igoaIpu: [
-    { title: "Le Laʻulu", details: ["Faiumuu talitali le ipu a Le Laʻulu"] },
+    { title: "Le Laʻulu", details: ["Faiumu talitali le ipu a Le Laʻulu"] },
     { title: "Leuluaʻialii", details: ["Toese i Tumua potopoto"] },
     { title: "Maposua", details: ["Saumaʻa aumai le ipu"] },
     { title: "Toilolo", details: ["Alii alofa i Faleupolu"] },
     { title: "Maiava", details: ["Tau mai lelei"] },
     { title: "Amituanaʻi", details: ["Puleiʻaʻava"] },
     { title: "Savea", details: ["Usoalii feoeoaʻi"] },
-    { title: "Tuimaseve", details: ["Faalaēō"] },
+    { title: "Tuimaseve", details: ["Faalaeō"] },
     { title: "Laʻulu", details: ["Saumaʻa aumai le ipu a Laʻulu"] },
     { title: "Fuaiʻavailili", details: ["Puaaelo tautala alii"] },
   ],
