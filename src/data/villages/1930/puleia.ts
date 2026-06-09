@@ -28,5 +28,6 @@ export const puleia: Village = {
 
   saotamaitai: [
     { title: "Faasuaʻiʻau", details: ["Lagi"] },
+    { title: "O lana ipu", details: ["E tapa fua"] },
   ],
 };
