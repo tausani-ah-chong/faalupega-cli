@@ -8,7 +8,7 @@ export const sagone: Village = {
 
   tulou: [
     "Tulouna a oe le ati Togia",
-    "le fale sefulu a lo outou ati Togia, (o Lealataua lea)",
+    "Tulouna le fale sefulu a lo outou ati Togia, (o Lealataua lea)",
     "Susū mai le aiga sa Moeleoi o Tapuaʻi ma Luagalau",
     "Afifio mai Maʻupū o Leaupepe ma Maʻilata",
     "Susū mai le aiga sa Lilomaiavā o lau Susuga a Leilua ma lo outou aiga",
@@ -30,12 +30,14 @@ export const sagone: Village = {
     { title: "Luagalau", details: ["E tapa fua"] },
     { title: "Leaupepe", details: ["Malo lē muia"] },
     { title: "Sa Lilomaiavā o Sa Leilua lea", details: ["Salafai ua tasi"] },
-    { title: "Toleafoa", details: ["Moeaiʻa talitali le ipu a e taute Toleafoa"] },
   ],
 
   aualumaOTane: [
-    "Maʻupū o Sa Moeleoi—Sa Toleafoā",
-    "Sa Leilua—Fauʻena",
+    "Maʻupū o Sa Moeleoi — Sa Toleafoā",
+    "Sa Leilua — Fauʻena",
+    "O a la ioga-ipu",
+    "Fau'ena - E tapa fua",
+    "Toleafoa - Moeaiʻa talitali le ipu a e taute Toleafoa"
   ],
 
   saotamaitai: [],
