@@ -15,7 +15,7 @@ export const fagafau: Village = {
 
   malaeFono: [
     { title: "Seve ma Faga", details: ["Tapapa"] },
-    { title: "Tuimauga", details: ["Matailili"] },
+    { title: "Tuimauga", details: ["Matailiili"] },
   ],
 
   maotaOAlii: [],
