@@ -8,12 +8,12 @@ export const satupaitea: Village = {
 
   tulou: [
     "Tulouna oe le Alataua",
-    "le Aiga sa Moeleoi",
-    "Asiata o le Vaa i malae",
-    "Tupaʻi o le Vaa i Ti",
-    "Tavuʻi ma Gasū",
-    "alo o Lilomaiava o Tuimaseve ma Faanana",
-    "a lau Susuga a Fanatea ma sa Valomua",
+    "Tulouna le Aiga sa Moeleoi",
+    "Tulouna Asiata o le Vaa i malae",
+    "Tuplouna Tupaʻi o le Vaa i Tī",
+    "Tuplouna Tavuʻi ma Gasū",
+    "Tuplouna alo o Lilomaiava o Tuimaseve ma Faanana",
+    "Tuplouna a lau Susuga a Fanatea ma sa Valomua",
     "Afio mai lou Tapaau o le Tonumaipeʻa.",
   ],
 
@@ -22,13 +22,11 @@ export const satupaitea: Village = {
     { title: "Tuimaseve", details: ["Vini"] },
     { title: "Faanana", details: ["Falepau"] },
     { title: "Tupaʻi", details: ["Tautunu. O le igoa lea o le alafale o Nafanua na tutuʻi ai"] },
-  ],
-
-  maotaOAlii: [
     { title: "Asiata", details: ["Leiliili"] },
     { title: "Gasū", details: ["Malaeaoga"] },
     { title: "Tavuʻi", details: ["Tulapua"] },
-    { title: "Lefauatea", details: ["1. Asotoʻelau 2. Paepaeālā."] },
+    { title: "Lefauatea", details: ["1. Asotoʻelau", "2. Paepaealā."] },
+    { title: "O le malae o Saua na toto ai le Tava'etoto. Sa mau ai Toilolo ma Tupuivao ma le alii o Valomua", details: [] },
   ],
 
   igoaIpu: [
@@ -50,7 +48,8 @@ export const satupaitea: Village = {
     { title: "Tupaʻi", details: ["Aigagalefili"] },
     { title: "Gasū", details: ["Tafaoganiua"] },
     { title: "Tavuʻi", details: ["Mataʻavatele"] },
-    { title: "Lefanatea", details: ["Leofao"] },
+    { title: "Lefauatea", details: ["Leofao"] },
     { title: "Tonumaipeʻa", details: ["Tilomai"] },
+    { title: "E tapa fua ipu a tama'ita'i", details: [] },
   ],
 };
