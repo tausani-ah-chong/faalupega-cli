@@ -34,7 +34,7 @@ export const samata: Village = {
     { title: "Mase", details: ["Lauola i Faleʻese"] },
     { title: "Togagaʻe", details: ["Legoga"] },
     { title: "Soi", details: ["Laulau i le Papa"] },
-    { title: "Maiava", details: ["(Deest in MS)"] },
+    { title: "Maiava", details: ["(Deest in Mis)"] },
     { title: "Fasavalu", details: ["Tuvao i le Tai"] },
     { title: "Pupumai", details: ["Toʻiata"] },
   ],
