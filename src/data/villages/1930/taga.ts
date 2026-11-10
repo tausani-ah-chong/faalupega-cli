@@ -8,18 +8,18 @@ export const taga: Village = {
 
   tulou: [
     "Tulouna a oe Salemuliaga",
-    "oe Safuaʻitua",
-    "le falefa o Safuaʻitua",
-    "lau tautalaga a Faiumu ma le fanau o Notoa ma Vaaimalu",
-    "lau Susuga a Toilolo o le Matua",
-    "lau Afioga Afoa o le Maʻupū",
-    "le Susuga a Taulapapa o le ʻanofale o Nuuli",
-    "lau Susuga a Faleatanoaʻi",
-    "oe sa Lealiifano",
-    "le tala o le fale o lau fetalaiga a Oʻoao",
-    "oe sa Silafaiga",
-    "Falefa o alii",
-    "lau fetalaiga a Tamala",
+    "Tulouna oe Safuaʻitua",
+    "Tulouna le falefa o Safuaʻitua",
+    "Tulouna lau tautalaga a Faiumu ma le fanau o Notoa ma Vaaimalu",
+    "Tulouna lau Susuga a Toilolo o le Matua",
+    "Tulouna lau Afioga Afoa o le Maʻupū",
+    "Tulouna le Susuga a Taulapapa o le ʻanofale o Nuuli",
+    "Tulouna lau Susuga a Faleatanoaʻi",
+    "Tulouna oe sa Lealiifano",
+    "Tulouna le tala o le fale o lau fetalaiga a Oʻoao",
+    "Tulouna oe sa Silafaiga",
+    "Tulouna Falefa o alii",
+    "Tulouna lau fetalaiga a Tamala",
   ],
 
   malaeFono: [
@@ -28,6 +28,7 @@ export const taga: Village = {
 
   maotaOAlii: [
     { title: "Taulapapa", details: ["Le Malutafa"] },
+    { title: "Afoa, Toilolo", details: ["Ogalotomaua, o le faaotaotaga a Pule ma Tumua"] },
   ],
 
   igoaIpu: [
