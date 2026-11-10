@@ -26,7 +26,7 @@ export const sagone: Village = {
 
   igoaIpu: [
     { title: "Sa Moeleoi uma", details: ["E tapa fua"] },
-    { title: "Tapuaʻi", details: ["1. Lave i sela 2. Sa o Maauga aumai malo ʻAutasi"] },
+    { title: "Tapuaʻi", details: ["1. Lave i sela", "2. Sa o Maauga aumai malo ʻAutasi"] },
     { title: "Luagalau", details: ["E tapa fua"] },
     { title: "Leaupepe", details: ["Malo lē muia"] },
     { title: "Sa Lilomaiavā o Sa Leilua lea", details: ["Salafai ua tasi"] },
