@@ -18,8 +18,8 @@ export const fogatuli: Village = {
   maotaOAlii: [],
 
   igoaIpu: [
-    { title: "Suʻa", details: ["Matanmuliulu"] },
-    { title: "Afualo", details: ["1. Numia ma le Alaiana. 2. Toese i Tumua potopoto"] },
+    { title: "Suʻa", details: ["Matamuliulu"] },
+    { title: "Afualo", details: ["1. Numia ma le Alatana.", "2. Toese i Tumua potopoto"] },
     { title: "Leone", details: ["Tauā Salega"] },
     { title: "Tooala", details: ["Tuitamaʻi"] },
     { title: "Ipu a sa Leotā", details: ["Puleiʻaʻava"] },
