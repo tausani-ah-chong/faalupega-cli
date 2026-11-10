@@ -8,11 +8,11 @@ export const siuvao: Village = {
 
   tulou: [
     "Tulouna a oe sa Soa, ma Saomaʻi, (Faleupolu)",
-    "lau Susuga Pesefea, ma lau Susuga a Tilimafaga",
+    "Tulouna lau Susuga Pesefea, ma lau Susuga a Tilimafaga",
   ],
 
   malaeFono: [
-    { title: "Sa Soā", details: ["Olotunga"] },
+    { title: "Sa Soā", details: ["Olotuuga"] },
   ],
 
   maotaOAlii: [],
@@ -25,7 +25,8 @@ export const siuvao: Village = {
   aualumaOTane: ["Sa Toleafoā"],
 
   saotamaitai: [
-    { title: "Pesefea", details: ["Lanamao"] },
+    { title: "Pesefea", details: ["Lamamao"] },
     { title: "Tilimafaga", details: ["Fuatino"] },
+    { title: "E tapa fua ipu a tama'ita'i", details: [] },
   ],
 };
