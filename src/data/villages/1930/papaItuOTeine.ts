@@ -23,6 +23,7 @@ export const papaItuOTeine: Village = {
   ],
 
   saotamaitai: [
-    { title: "Faaiʻialofa", details: ["O lana ipu - E tapa fua"] },
+    { title: "Faaiʻialofa", details: [] },
+    { title: "O lana ipu", details: ["E tapa fua"] },
   ],
 };
