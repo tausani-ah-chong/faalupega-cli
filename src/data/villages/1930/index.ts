@@ -56,7 +56,7 @@ export { vailoa } from "./vailoa.js";
 export { vaitoomuli } from "./vaitoomuli.js";
 export { faala } from "./faala.js";
 export { apolima } from "./apolima.js";
-export { sleiataua } from "./sleiataua.js";
+export { saleiataua } from "./saleiataua.js";
 export { salua } from "./salua.js";
 export { lepuiai } from "./lepuiai.js";
 export { apai } from "./apai.js";
