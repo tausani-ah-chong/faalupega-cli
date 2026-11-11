@@ -8,7 +8,7 @@ export const apai: Village = {
 
   tulou: [
     "Tulouna oe le Pologamā",
-    "oe le aiga",
+    "Tulouna oe le aiga",
     "Susū mai Tuilaepa o le alo o Malietoa",
   ],
 
