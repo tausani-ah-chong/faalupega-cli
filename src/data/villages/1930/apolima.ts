@@ -7,7 +7,7 @@ export const apolima: Village = {
   island: "Apolima",
 
   tulou: [
-    "Tulouna a oe sa ʻTuā",
+    "Tulouna a oe sa ʻUmā",
     "Susū mai lau Susuga a Saʻu",
     "Afio mai mai Toʻoā ma lou Feaōga",
   ],
