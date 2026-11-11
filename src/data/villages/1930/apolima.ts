@@ -19,7 +19,7 @@ export const apolima: Village = {
   maotaOAlii: [],
 
   igoaIpu: [
-    { title: "Saʻu", details: ["1. Malo ua tu aumai fili maua. 2. Fai taua ma le ʻolo"] },
+    { title: "Saʻu", details: ["1. Malo ua tu aumai fili maua.", "2. Fai taua ma le ʻolo"] },
   ],
 
   saotamaitai: [
