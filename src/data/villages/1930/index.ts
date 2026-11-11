@@ -1,3 +1,4 @@
+// Data source: "O le tusi faalupega o Samoa" (1930) — see DATA_SOURCES.md for copyright info.
 export { puipaa } from "./puipaa.js";
 export { tafua } from "./tafua.js";
 export { toamua } from "./toamua.js";

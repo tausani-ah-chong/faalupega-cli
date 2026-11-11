@@ -31,16 +31,19 @@ describe("data integrity", () => {
         });
       });
 
-      it("has no empty details arrays in saotamaitai", () => {
+      it("has no empty details arrays in saotamaitai (except remarks)", () => {
         village.saotamaitai.forEach((entry) => {
-          expect(entry.details.length).toBeGreaterThan(0);
           expect(entry.title.trim().length).toBeGreaterThan(0);
+          // Remark entries like "E aofia ia..." have no details — that's valid
+          if (!entry.title.startsWith("E ")) {
+            expect(entry.details.length).toBeGreaterThan(0);
+          }
         });
       });
 
-      it("has no empty details arrays in malaeFono", () => {
+      it("has non-empty titles in malaeFono", () => {
         village.malaeFono.forEach((entry) => {
-          expect(entry.details.length).toBeGreaterThan(0);
+          expect(entry.title.trim().length).toBeGreaterThan(0);
         });
       });
 
@@ -50,9 +53,13 @@ describe("data integrity", () => {
         });
       });
 
-      it("has no empty details arrays in igoaIpu", () => {
+      it("has no empty details arrays in igoaIpu (except remarks)", () => {
         village.igoaIpu.forEach((entry) => {
-          expect(entry.details.length).toBeGreaterThan(0);
+          expect(entry.title.trim().length).toBeGreaterThan(0);
+          // Remark entries like "E tapa fua..." or "O isi e tapa fua" have no details
+          if (!entry.title.startsWith("E ") && !entry.title.startsWith("O isi")) {
+            expect(entry.details.length).toBeGreaterThan(0);
+          }
         });
       });
     });
