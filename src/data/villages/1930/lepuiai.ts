@@ -8,13 +8,13 @@ export const lepuiai: Village = {
 
   tulou: [
     "Tulouna lau Susuga Leiʻataua Letāuā",
-    "le Falelima o alo o Saʻapapa ma le matua o Vai",
+    "Tulouna le Falelima o alo o Saʻapapa ma le matua o Vai",
   ],
 
   malaeFono: [],
 
   maotaMaMalae: [
-    { title: "Malaeetoli", details: [] },
+    { title: "Malaeotoli", details: [] },
   ],
 
   maotaOAlii: [],
@@ -25,5 +25,6 @@ export const lepuiai: Village = {
 
   saotamaitai: [
     { title: "Leiʻataua", details: ["Letāuā"] },
+    { title: "Fuaiala o Salei'ataua", details: ["Folasa", "Savaauli", "Faleū", "Lepuia'i", "Aaeno"] },
   ],
 };
