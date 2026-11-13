@@ -1,6 +1,6 @@
 import { Village } from "../../types.js";
 
-export const gautavai-sili-vaiala: Village = {
+export const gautavaiSiliVaiala: Village = {
   version: "1930",
   name: "Gautavai, Sili, Vaiala",
   district: "O le Itu-o-Teine",
