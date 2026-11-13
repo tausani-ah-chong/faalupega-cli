@@ -31,37 +31,33 @@ describe("data integrity", () => {
         });
       });
 
-      it("has no empty details arrays in saotamaitai (except remarks)", () => {
-        village.saotamaitai.forEach((entry) => {
-          expect(entry.title.trim().length).toBeGreaterThan(0);
-          // Remark entries like "E aofia ia..." have no details — that's valid
-          if (!entry.title.startsWith("E ")) {
-            expect(entry.details.length).toBeGreaterThan(0);
-          }
-        });
-      });
+      // An entry may have no details: the book often prints a name or a
+      // remark on its own line. Record those as `details: []`.
+      const sections = {
+        saotamaitai: village.saotamaitai,
+        malaeFono: village.malaeFono,
+        maotaOAlii: village.maotaOAlii,
+        maotaMaMalae: village.maotaMaMalae,
+        maota: village.maota,
+        igoaIpu: village.igoaIpu,
+        ipuATamaitai: village.ipuATamaitai,
+      };
 
-      it("has non-empty titles in malaeFono", () => {
-        village.malaeFono.forEach((entry) => {
-          expect(entry.title.trim().length).toBeGreaterThan(0);
-        });
-      });
+      for (const [section, entries] of Object.entries(sections)) {
+        if (!entries) continue;
 
-      it("has no empty details arrays in maotaOAlii", () => {
-        village.maotaOAlii.forEach((entry) => {
-          expect(entry.details.length).toBeGreaterThan(0);
+        it(`has non-empty titles in ${section}`, () => {
+          entries.forEach((entry) => {
+            expect(entry.title.trim().length).toBeGreaterThan(0);
+          });
         });
-      });
 
-      it("has no empty details arrays in igoaIpu (except remarks)", () => {
-        village.igoaIpu.forEach((entry) => {
-          expect(entry.title.trim().length).toBeGreaterThan(0);
-          // Remark entries like "E tapa fua..." or "O isi e tapa fua" have no details
-          if (!entry.title.startsWith("E ") && !entry.title.startsWith("O isi")) {
-            expect(entry.details.length).toBeGreaterThan(0);
-          }
+        it(`has a details array on every ${section} entry`, () => {
+          entries.forEach((entry) => {
+            expect(Array.isArray(entry.details)).toBe(true);
+          });
         });
-      });
+      }
     });
   }
 });
