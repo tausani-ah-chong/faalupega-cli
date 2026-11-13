@@ -43,6 +43,6 @@ export const salailua: Village = {
   ipuATamaitai: [
     { title: "Samalaʻulu", details: ["Soifua eseese"] },
     { title: "ʻIliganoa", details: ["Faatiu o Amoa"] },
-    { title: 'Igoa-ipu a sa Vaovasā pe a faalelea Tufu Gataivai; ona tapa lea faapea: "Sauma\'a aumai le ipu." A e a faalelea Sala\'ilua; ona tapa lea faapea: "Aumai tautalia fua."', details: [] },
+    { title: 'Igoa-ipu a sa Vaovasā pe a faalelea Tufu Gataivai; ona tapa lea faapea: "Saumaʻa aumai le ipu." A e a faalelea Salaʻilua; ona tapa lea faapea: "Aumai tautalia fua."', details: [] },
   ],
 };

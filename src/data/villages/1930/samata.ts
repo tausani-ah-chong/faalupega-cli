@@ -7,7 +7,7 @@ export const samata: Village = {
   island: "Savaiʻi",
 
   tulou: [
-    "Tulouna oe Saleutogipo'e",
+    "Tulouna oe Saleutogipoʻe",
     "Tulouna Le Limamatua o Faleupolu e fa",
     "Tulouna Le matua o Tuipeʻa ma le faleono a Tama a iʻa",
     "Tulouna oe na pule",

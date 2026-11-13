@@ -64,6 +64,6 @@ export const gautavaiSiliVaiala: Village = {
 
   ipuATamaitai: [
     { title: "Iliganoa", details: ["Toevao"] },
-    { title: "E tapa fua ipu a isi tama'ita'i", details: [] },
+    { title: "E tapa fua ipu a isi tamaʻitaʻi", details: [] },
   ],
 };

@@ -36,7 +36,7 @@ export const sagone: Village = {
     "Maʻupū o Sa Moeleoi — Sa Toleafoā",
     "Sa Leilua — Fauʻena",
     "O a la ioga-ipu",
-    "Fau'ena - E tapa fua",
+    "Fauʻena - E tapa fua",
     "Toleafoa - Moeaiʻa talitali le ipu a e taute Toleafoa"
   ],
 

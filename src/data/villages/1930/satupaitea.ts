@@ -26,7 +26,7 @@ export const satupaitea: Village = {
     { title: "Gasū", details: ["Malaeaoga"] },
     { title: "Tavuʻi", details: ["Tulapua"] },
     { title: "Lefauatea", details: ["1. Asotoʻelau", "2. Paepaealā."] },
-    { title: "O le malae o Saua na toto ai le Tava'etoto. Sa mau ai Toilolo ma Tupuivao ma le alii o Valomua", details: [] },
+    { title: "O le malae o Saua na toto ai le Tavaʻetoto. Sa mau ai Toilolo ma Tupuivao ma le alii o Valomua", details: [] },
   ],
 
   maotaOAlii: [],
@@ -52,6 +52,6 @@ export const satupaitea: Village = {
     { title: "Tavuʻi", details: ["Mataʻavatele"] },
     { title: "Lefauatea", details: ["Leofao"] },
     { title: "Tonumaipeʻa", details: ["Tilomai"] },
-    { title: "E tapa fua ipu a tama'ita'i", details: [] },
+    { title: "E tapa fua ipu a tamaʻitaʻi", details: [] },
   ],
 };

@@ -28,7 +28,7 @@ export const fogasavaii: Village = {
 
   igoaIpu: [
     { title: "Mataʻutia", details: ["Fonofili"] },
-    { title: "Falefa o Mata'utia", details: [] },
+    { title: "Falefa o Mataʻutia", details: [] },
     { title: "Mooui le Matua", details: ["E tapa fua"] },
     { title: "Fepuleaʻi", details: ["E tapa fua"] },
     { title: "Togafau", details: ["E tapa fua"] },

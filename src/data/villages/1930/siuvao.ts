@@ -27,6 +27,6 @@ export const siuvao: Village = {
   saotamaitai: [
     { title: "Pesefea", details: ["Lamamao"] },
     { title: "Tilimafaga", details: ["Fuatino"] },
-    { title: "E tapa fua ipu a tama'ita'i", details: [] },
+    { title: "E tapa fua ipu a tamaʻitaʻi", details: [] },
   ],
 };

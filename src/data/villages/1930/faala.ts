@@ -52,6 +52,6 @@ export const faala: Village = {
 
   ipuATamaitai: [
     { title: "Lanuola", details: ["Nunu i Faleolo"] },
-    { title: "E tapa fua ipu a isi tama'ita'i", details: [] },
+    { title: "E tapa fua ipu a isi tamaʻitaʻi", details: [] },
   ],
 };

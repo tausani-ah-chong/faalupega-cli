@@ -42,6 +42,6 @@ export const gagaemalae: Village = {
     { title: "Faatupuinati", details: ["Mataʻavauē"] },
     { title: "Tauavamea", details: ["Lomialagi"] },
     { title: "Leaupepe", details: ["Fuatino"] },
-    { title: "E tapa fua ipu a Tama'ita'i", details: [] },
+    { title: "E tapa fua ipu a Tamaʻitaʻi", details: [] },
   ],
 };
