@@ -12,7 +12,7 @@ export const faga: Village = {
     "Tulouna a oe Laufiso ma Tapuala",
     "Tulouna a oe a Tagata matua",
     "Afifio mai Alii e toa ono o Le Faga",
-    "Afio mai Tooala, Ufagalilo, Unasa, Nonumalo, Sooa'emalelagi ma Leafinealii",
+    "Afio mai Tooala, Ufagalilo, Unasa, Nonumalo, Sooaʻemalelagi ma Leafinealii",
     "Afifio mai ia le Aiga Taulagi",
     "Afifio mai Vaafusuaga ma Toleafoa",
   ],
@@ -31,7 +31,7 @@ export const faga: Village = {
   igoaIpu: [
     { title: "Tooala", details: ["Tali tigā o Tumua"] },
     { title: "Ufagalilo", details: ["Nofo saʻo"] },
-    { title: "Sooa'emalelagi", details: ["Malolo i au maoʻi"] },
+    { title: "Sooaʻemalelagi", details: ["Malolo i au maoʻi"] },
     { title: "Tofa", details: ["Tauaʻeala"] },
     { title: "Toleafoa", details: ["Moeaiʻa talitali le ipu, a e taute Toleafoa"] },
     { title: "Tauiliili", details: ["Aʻegataulupe"] },
@@ -50,7 +50,7 @@ export const faga: Village = {
   saotamaitai: [
     { title: "Ufagalilo", details: ["Tofoipūpū"] },
     { title: "Tooala", details: ["Tauaʻituli"] },
-    { title: "Sooa'emalelagi", details: ["Fuatai"] },
+    { title: "Sooaʻemalelagi", details: ["Fuatai"] },
     { title: "Toetagata", details: ["Afamasaga"] },
     { title: "Toleafoa", details: ["Tofoipūpū"] },
     { title: "Nonumalo", details: ["Tualupetū"] },
