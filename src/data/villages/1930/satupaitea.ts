@@ -29,6 +29,8 @@ export const satupaitea: Village = {
     { title: "O le malae o Saua na toto ai le Tava'etoto. Sa mau ai Toilolo ma Tupuivao ma le alii o Valomua", details: [] },
   ],
 
+  maotaOAlii: [],
+
   igoaIpu: [
     { title: "Asiata", details: ["Tautalaaso"] },
     { title: "Tupaʻi", details: ["Aumoega manaia"] },
