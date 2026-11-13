@@ -25,6 +25,6 @@ export const lepuiai: Village = {
 
   saotamaitai: [
     { title: "Leiʻataua", details: ["Letāuā"] },
-    { title: "Fuaiala o Salei'ataua", details: ["Folasa", "Savaauli", "Faleū", "Lepuia'i", "Aaeno"] },
+    { title: "Fuaiala o Saleiʻataua", details: ["Folasa", "Savaauli", "Faleū", "Lepuiaʻi", "Aaeno"] },
   ],
 };
