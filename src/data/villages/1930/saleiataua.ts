@@ -1,6 +1,6 @@
 import { Village } from "../../types.js";
 
-export const sleiataua: Village = {
+export const saleiataua: Village = {
   version: "1930",
   name: "Saleiʻataua",
   district: "Apolima ma Manono",
