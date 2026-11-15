@@ -84,13 +84,16 @@ faalupega matai --help
 
 ## Available Data
 
-Currently only the **1930** edition is included, with 18 villages across 3 districts:
+Currently only the **1930** edition is included, with 56 village records across 4 districts of the book:
 
 | District | Island | Villages |
 |----------|--------|----------|
 | Faleata | Upolu | Puipaʻa, Toamua |
 | Faʻasaleleaga | Savaiʻi | Tafua, Salelologa, Salelavalu, ʻIva, Vaiʻafai, Vaisaʻulu, Lalomalava, Safotulafai, Safua, Sapapalii, Tapueleele, Faga, Amoa Sasaʻe, Amoa Sisifo |
-| O le Itu-o-Tane | Savaiʻi | Lealatele, Patamea |
+| O le Itu-o-Tane | Savaiʻi | Lealatele, Patamea, Saleʻaula, Satoalepai, Matautu, Manase, Safotu, Samauga, Safune, Sasina, Letui, Aʻopo, Asau, Vaisala, Fagasa, Sataua, Falealupo, Tufutafoe, Neiafu, Falelima, Papa |
+| O le Itu-o-Teine | Savaiʻi | Siʻuvao, Fagafau, Samata, Fogatuli, Faiaai, Vaipuʻa, Fogasavaii, Sagone, Gagaʻemalae, Salaʻilua, Taga, Gautavai, Sili, Vaiala, Gataivai, Papa, Puleia, Satupaitea, Vailoa (Palauli), Vaitoomuli (Palauli), Faala (Palauli) |
+
+Every village also has a global ID, such as `vaisigano/fagasa`, shown in `--json` output. See [DATA_CONVENTIONS.md](DATA_CONVENTIONS.md) for how IDs and data are recorded.
 
 Each village record includes (where applicable):
 - **Tulou** — the ceremonial address/salutation

@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const samauga: Village = {
+  id: "gagaifomauga/samauga",
   version: "1930",
   name: "Samauga",
   district: "O le Itu-o-Tane",

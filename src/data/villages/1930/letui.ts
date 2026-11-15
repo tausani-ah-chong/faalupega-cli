@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const letui: Village = {
+  id: "gagaifomauga/letui",
   version: "1930",
   name: "Letui",
   district: "O le Itu-o-Tane",

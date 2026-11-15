@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const safotu: Village = {
+  id: "gagaifomauga/safotu",
   version: "1930",
   name: "Safotu",
   district: "O le Itu-o-Tane",

@@ -74,6 +74,7 @@ describe("formatVillage", () => {
 describe("formatMataiResult (unit)", () => {
   const mockResult: MataiSearchResult = {
     village: {
+      id: "tuamasaga/puipaa",
       version: "1930",
       name: "Puipaʻa",
       district: "Faleata",

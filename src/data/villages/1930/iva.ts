@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const iva: Village = {
+  id: "faasaleleaga/iva",
   version: "1930",
   name: "ʻIva",
   district: "Faʻasaleleaga",

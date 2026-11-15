@@ -61,6 +61,7 @@ export function createServer(): McpServer {
       }
       const jsonResults = results.map((r) => ({
         village: {
+          id: r.village.id,
           name: r.village.name,
           district: r.village.district,
           island: r.village.island,

@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const vaitoomuli: Village = {
+  id: "palauli/vaitoomuli",
   version: "1930",
   name: "Vaitoomuli (Palauli)",
   district: "O le Itu-o-Teine",
