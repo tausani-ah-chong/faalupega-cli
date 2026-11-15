@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const matautu: Village = {
+  id: "gagaemauga/matautu",
   version: "1930",
   name: "Matautu",
   district: "O le Itu-o-Tane",

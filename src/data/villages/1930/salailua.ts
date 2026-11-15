@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const salailua: Village = {
+  id: "palauli/salailua",
   version: "1930",
   name: "Salaʻilua",
   district: "O le Itu-o-Teine",

@@ -10,3 +10,5 @@ export function getVillages(version?: string): Village[] {
 
 export type { Village, TitleEntry } from "./types.js";
 export { DEFAULT_VERSION } from "./types.js";
+export { DISTRICT_IDS, VILLAGE_ID_PATTERN } from "./districts.js";
+export type { DistrictId, VillageId } from "./districts.js";

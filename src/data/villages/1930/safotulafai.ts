@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const safotulafai: Village = {
+  id: "faasaleleaga/safotulafai",
   version: "1930",
   name: "Safotulafai",
   district: "Faʻasaleleaga",

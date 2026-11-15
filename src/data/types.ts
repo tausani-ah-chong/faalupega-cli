@@ -1,3 +1,5 @@
+import type { VillageId } from "./districts.js";
+
 /**
  * A title entry pairing a matai title with its details.
  * The em-dash relationship (Title — Detail) is the core pattern in faalupega.
@@ -20,6 +22,9 @@ export interface TitleEntry {
 export const DEFAULT_VERSION = "1930";
 
 export interface Village {
+  /** Global village ID, e.g. "vaisigano/fagasa". Shared by every edition of the village. */
+  id: VillageId;
+
   /** Version identifier, e.g. "1930" */
   version: string;
 

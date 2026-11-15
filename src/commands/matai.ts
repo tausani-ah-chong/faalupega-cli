@@ -23,7 +23,7 @@ export const mataiCommand = new Command("matai")
     }
     if (opts.json) {
       const jsonResults = results.map((r) => ({
-        village: { name: r.village.name, district: r.village.district, island: r.village.island, version: r.village.version },
+        village: { id: r.village.id, name: r.village.name, district: r.village.district, island: r.village.island, version: r.village.version },
         matches: r.matches,
       }));
       console.log(JSON.stringify(jsonResults, null, 2));

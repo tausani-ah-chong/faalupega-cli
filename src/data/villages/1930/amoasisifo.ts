@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const amoaSisifo: Village = {
+  id: "faasaleleaga/amoa-sisifo",
   version: "1930",
   name: "Amoa Sisifo",
   district: "Faʻasaleleaga",

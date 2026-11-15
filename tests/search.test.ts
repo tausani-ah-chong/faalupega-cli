@@ -40,6 +40,7 @@ describe("normalize", () => {
 vi.mock("../src/data/index.js", () => {
   const mockVillages: Village[] = [
     {
+      id: "tuamasaga/testville",
       version: "1930",
       name: "Testville",
       district: "TestDistrict",
@@ -57,6 +58,7 @@ vi.mock("../src/data/index.js", () => {
       saotamaitai: [{ title: "Seiuli", details: ["Letelesā"] }],
     },
     {
+      id: "palauli/othertown",
       version: "1930",
       name: "Othertown",
       district: "OtherDistrict",

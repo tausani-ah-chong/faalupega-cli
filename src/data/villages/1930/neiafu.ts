@@ -1,6 +1,7 @@
 import { Village } from "../../types.js";
 
 export const neiafu: Village = {
+  id: "vaisigano/neiafu",
   version: "1930",
   name: "Neiafu",
   district: "O le Itu-o-Tane",
